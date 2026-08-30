@@ -17,6 +17,7 @@ object sits in, with its distinctive part drawn from a pool of words meaning
 |---|---|
 | `register.json` | **The record.** Every name ever issued, plus the word pool. |
 | `issue.py` | The tool that issues names and writes them to the register. |
+| `expand.py` | One-off batch loader. Derives constellations from coordinates via astropy. |
 | `index.html` | The public page. Reads `register.json` and displays it. |
 | `contribute.html` | Contributor page: proposal previews and how assignment works. |
 | `skyname-proposal.md` | The proposal paper explaining the scheme and why. |

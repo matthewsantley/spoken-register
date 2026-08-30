@@ -205,7 +205,7 @@ The calculation is run **once**, when the name is first given. The written-down 
 
 ## Appendix B — What has been built
 
-A working version accompanies this paper: the list itself (`register.json`), a small program that adds names to it (`issue.py`), and a web page that displays it (`index.html`). The list currently holds 57 objects, using words from 44 languages across 27 constellations.
+A working version accompanies this paper: the list itself (`register.json`), a small program that adds names to it (`issue.py`), and a web page that displays it (`index.html`). Constellations are not typed in by hand: each host star's position is checked against the official IAU boundaries, so that part of every name is derived rather than guessed. The list currently holds 179 objects, using words from 44 languages across 42 constellations. Twenty of those already carry a proper name and are recorded rather than renamed.
 
 The program enforces the "never changed" rule directly. Names are added to the end of the list and the list is never rebuilt from scratch. A checking command looks for duplicates, unknown constellations and clashes.
 
