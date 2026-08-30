@@ -1,0 +1,37 @@
+name: Add your language
+description: Your language is missing from the pool.
+title: "New language: "
+labels: ["word check", "new language"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The pool takes only the plainest nouns — the ordinary word for star,
+        sky or moon. No mythology, no deities, no place names, so that no
+        culture's stories are imposed on anyone else's sky.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+    validations:
+      required: true
+  - type: textarea
+    id: words
+    attributes:
+      label: The word or words
+      description: One per line, in the form "word — meaning". Give the plain Latin-alphabet spelling used in the register, and the properly written form too if they differ.
+      placeholder: |
+        Seren — star (written: seren)
+        Awyr — sky (written: awyr)
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Pronunciation or anything else worth knowing
+  - type: input
+    id: credit
+    attributes:
+      label: How would you like to be credited?
+    validations:
+      required: true
