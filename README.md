@@ -21,6 +21,7 @@ object sits in, with its distinctive part drawn from a pool of words meaning
 | `poolwork.py` | One-off: withdrew two fabricated words, expanded the pool to 229. |
 | `index.html` | The public page. Reads `register.json` and displays it. |
 | `contribute.html` | Contributor page: proposal previews and how assignment works. |
+| `words.html` | The word pool by language, with a route to confirm or correct each entry. |
 | `skyname-proposal.md` | The proposal paper explaining the scheme and why. |
 
 ## Running it
@@ -73,7 +74,15 @@ whole pool as unvetted until those fields fill in.
 
 ## Contributing
 
-Open a pull request against `register.json`. Run `./issue.py check` first.
+**Checking a word is the most useful thing you can do.** The word list is at
+`words.html` on the live site. Each entry has a one-click route to confirm or
+correct it, by email or by GitHub issue.
+
+There are three issue templates: confirm a word, correct a word, add your
+language. Email works just as well and needs no account.
+
+For code or register changes, open a pull request against `register.json`. Run
+`./issue.py check` first.
 
 The page has a preview panel that shows what the tool would issue and prints
 the exact command and JSON line to submit. The page itself never writes

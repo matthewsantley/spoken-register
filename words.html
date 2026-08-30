@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check a word &mdash; The Spoken Register</title>
+<meta name="description" content="Every word in the Spoken Register pool, grouped by language, waiting to be confirmed or corrected by people who speak them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#DCE1DF; --card:#F5F6F3; --ink:#14212B; --slate:#5D6C74;
+  --verdigris:#33705E; --ochre:#9A5C17; --rule:#BCC5C2;
+  --display:'Fraunces',Georgia,serif; --body:'Archivo',system-ui,sans-serif; --mono:'IBM Plex Mono',monospace;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+a{color:var(--verdigris)}
+:focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
+.back{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:34px 0 0;text-decoration:none}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(30px,6.5vw,50px);line-height:1.02;margin:18px 0 0;font-variation-settings:'SOFT' 40,'WONK' 1}
+.standfirst{font-family:var(--display);font-weight:300;font-size:clamp(17px,3vw,20px);line-height:1.5;color:var(--slate);margin:14px 0 0;max-width:46ch}
+.ask{background:var(--card);border:1px solid var(--ink);padding:26px 26px 22px;margin:30px 0 0}
+.ask h2{font-family:var(--display);font-weight:500;font-size:20px;margin:0 0 10px}
+.ask p{margin:0 0 12px;max-width:60ch}
+.ask p:last-child{margin-bottom:0}
+.ask strong{font-weight:500}
+.tallies{display:flex;gap:34px;flex-wrap:wrap;margin:26px 0 0}
+.tallies div b{display:block;font-family:var(--display);font-weight:500;font-size:32px;line-height:1}
+.tallies div span{font-family:var(--mono);font-size:11px;color:var(--slate);letter-spacing:.06em;text-transform:uppercase}
+.controls{display:flex;gap:10px;margin:28px 0 0;flex-wrap:wrap}
+input,button,select{font-family:var(--body);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:2px;padding:10px 12px}
+input{flex:1;min-width:220px}
+button{cursor:pointer;background:transparent;color:var(--ink);border-color:var(--ink);font-weight:500;padding:10px 16px}
+button:hover{background:var(--ink);color:var(--paper)}
+button.on{background:var(--ink);color:var(--paper)}
+.langblock{margin-top:30px;border-top:1px solid var(--rule);padding-top:14px}
+.langname{font-family:var(--display);font-weight:500;font-size:19px;margin:0 0 8px}
+.wordrow{display:flex;align-items:baseline;gap:14px;padding:7px 0;border-bottom:1px solid rgba(188,197,192,.5);flex-wrap:wrap}
+.w{font-family:var(--mono);font-size:15px;font-weight:500;min-width:130px}
+.m{font-size:14px;color:var(--slate);min-width:52px}
+.status{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:2px;background:#EDE7DC;color:#7A5A24}
+.status.ok{background:#DCEAE4;color:#245445}
+.act{margin-left:auto;display:flex;gap:8px}
+.act a{font-family:var(--mono);font-size:11.5px;text-decoration:none;border:1px solid var(--rule);padding:3px 9px;color:var(--slate)}
+.act a:hover{border-color:var(--ink);color:var(--ink)}
+.act a.gh{color:var(--slate);opacity:.7;letter-spacing:.04em}
+.act a.gh:hover{opacity:1}
+.gone{margin-top:44px;border-top:1px solid var(--ink);padding-top:22px}
+.gone h2{font-family:var(--display);font-weight:500;font-size:20px;margin:0 0 10px}
+.gone p{max-width:62ch;margin:0 0 12px}
+.gonerow{font-family:var(--mono);font-size:13px;padding:8px 0;border-bottom:1px solid rgba(188,197,192,.5);color:var(--slate)}
+.gonerow b{color:var(--ink);font-weight:500}
+footer{padding:38px 0 70px;margin-top:44px;border-top:1px solid var(--ink);font-size:13.5px;color:var(--slate)}
+.empty{padding:30px 0;color:var(--slate)}
+@media(max-width:620px){.wrap{padding:0 18px}.act{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="index.html">&larr; The Spoken Register</a>
+<h1>Check a word</h1>
+<p class="standfirst">Every word in the pool, grouped by the language it is supposed to come from.</p>
+
+<div class="ask">
+  <h2>What I am actually asking for</h2>
+  <p>I do not speak most of these languages. The words were gathered from reference sources, and <strong>none of them has been confirmed by a speaker</strong>.</p>
+  <p>That is not a theoretical worry. Two words in the first version of this pool were simply invented &mdash; one recorded as Lithuanian for &ldquo;sky&rdquo;, one as Greenlandic for &ldquo;star&rdquo;. Neither exists. Both had already been used in real names and had to be withdrawn. They are listed at the bottom of this page.</p>
+  <p>So if you speak one of these languages: is the word right? Does it mean what it says? Would it sound odd, or worse, to someone who speaks it? <strong>Even one confirmed word is a real contribution.</strong> It takes about a minute.</p>
+  <p style="font-size:14px;color:var(--slate)">Two ways to tell me, whichever suits. <strong>This is right</strong> and <strong>This is wrong</strong> open a pre-filled email &mdash; no account needed. The small <strong>gh</strong> links open a GitHub issue instead, which makes your answer public so nobody has to check the same word twice. <a href="https://github.com/matthewsantley/spoken-register/issues/new?template=add-language.yml">Your language missing entirely?</a></p>
+</div>
+
+<div class="tallies">
+  <div><b id="tWords">&mdash;</b><span>words in the pool</span></div>
+  <div><b id="tLangs">&mdash;</b><span>languages</span></div>
+  <div><b id="tVouched">&mdash;</b><span>confirmed by a speaker</span></div>
+</div>
+
+<div class="controls">
+  <input id="q" placeholder="Find a language or a word" aria-label="Filter the pool">
+  <button id="fAll" class="on">All</button>
+  <button id="fStar">Star</button>
+  <button id="fSky">Sky</button>
+  <button id="fMoon">Moon</button>
+</div>
+
+<div id="list"></div>
+
+<div class="gone" id="goneBlock" hidden>
+  <h2>Words withdrawn</h2>
+  <p>Kept here on purpose. A register that hides its mistakes is not worth trusting.</p>
+  <div id="goneRows"></div>
+</div>
+
+<footer>
+  Matthew John Santley &middot; <a href="mailto:mattsantley@hotmail.com">mattsantley@hotmail.com</a> &middot;
+  <a href="https://github.com/matthewsantley/spoken-register">the code</a> &middot;
+  <a href="index.html">back to the register</a>
+</footer>
+
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let POOL=[],GONE=[],filter="all";
+
+function mail(w,kind){
+  const subj=encodeURIComponent(
+    (kind==="ok"?"Confirming: ":"Correction: ")+w.word+" ("+w.language+")");
+  const body=encodeURIComponent(
+    (kind==="ok"
+      ? "I speak "+w.language+" and I can confirm this word.\n\n"
+      : "I speak "+w.language+" and this word is not right.\n\n")+
+    "Word: "+w.word+"\nLanguage: "+w.language+"\nRecorded as meaning: "+w.meaning+"\n\n"+
+    (kind==="ok"
+      ? "Anything worth noting about spelling or pronunciation:\n\n\nHow you'd like to be credited:\n"
+      : "What it should be instead:\n\n\nWhat the current word actually means, if anything:\n\n\nHow you'd like to be credited:\n"));
+  return "mailto:mattsantley@hotmail.com?subject="+subj+"&body="+body;
+}
+
+const REPO="https://github.com/matthewsantley/spoken-register";
+function issue(w,kind){
+  const tpl=kind==="ok"?"confirm-word.yml":"correct-word.yml";
+  return REPO+"/issues/new?template="+tpl+
+    "&title="+encodeURIComponent((kind==="ok"?"Confirming: ":"Correction: ")+w.word+" ("+w.language+")");
+}
+
+function render(){
+  const q=$("q").value.trim().toLowerCase();
+  const items=POOL.filter(w=>
+    (filter==="all"||w.meaning===filter) &&
+    (!q||w.word.toLowerCase().includes(q)||w.language.toLowerCase().includes(q)));
+  const byLang={};
+  items.forEach(w=>{(byLang[w.language]=byLang[w.language]||[]).push(w)});
+  const langs=Object.keys(byLang).sort((a,b)=>a.localeCompare(b));
+  if(!langs.length){$("list").innerHTML='<p class="empty">Nothing matches that.</p>';return}
+  $("list").innerHTML=langs.map(L=>
+    '<div class="langblock"><p class="langname">'+L+'</p>'+
+    byLang[L].sort((a,b)=>a.word.localeCompare(b.word)).map(w=>
+      '<div class="wordrow">'+
+        '<span class="w">'+w.word+'</span>'+
+        '<span class="m">'+w.meaning+'</span>'+
+        (w.vouched_by
+          ? '<span class="status ok">confirmed by '+w.vouched_by+'</span>'
+          : '<span class="status">not yet checked</span>')+
+        '<span class="act">'+
+          '<a href="'+mail(w,"ok")+'">This is right</a>'+
+          '<a href="'+mail(w,"bad")+'">This is wrong</a>'+
+          '<a class="gh" href="'+issue(w,"ok")+'" title="Confirm via GitHub">gh &#10003;</a>'+
+          '<a class="gh" href="'+issue(w,"bad")+'" title="Correct via GitHub">gh &#10007;</a>'+
+        '</span>'+
+      '</div>').join("")+
+    '</div>').join("");
+}
+
+function setFilter(f,btn){
+  filter=f;
+  ["fAll","fStar","fSky","fMoon"].forEach(i=>$(i).classList.remove("on"));
+  btn.classList.add("on");
+  render();
+}
+
+fetch("register.json",{cache:"no-store"})
+  .then(r=>r.json())
+  .then(d=>{
+    POOL=d.pool; GONE=d.withdrawn||[];
+    $("tWords").textContent=POOL.length;
+    $("tLangs").textContent=new Set(POOL.map(w=>w.language)).size;
+    $("tVouched").textContent=POOL.filter(w=>w.vouched_by).length;
+    if(GONE.length){
+      $("goneBlock").hidden=false;
+      $("goneRows").innerHTML=GONE.map(g=>
+        '<div class="gonerow"><b>'+g.withdrawn_name+'</b> &mdash; '+g.reason+
+        ' &middot; was the name for '+g.id+'</div>').join("");
+    }
+    render();
+  })
+  .catch(()=>{$("list").innerHTML='<p class="empty">Could not load the word pool.</p>'});
+
+$("q").addEventListener("input",render);
+$("fAll").addEventListener("click",e=>setFilter("all",e.target));
+$("fStar").addEventListener("click",e=>setFilter("star",e.target));
+$("fSky").addEventListener("click",e=>setFilter("sky",e.target));
+$("fMoon").addEventListener("click",e=>setFilter("moon",e.target));
+</script>
+</body>
+</html>
