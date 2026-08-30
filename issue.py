@@ -239,10 +239,10 @@ SEED_OBJECTS = [
     ("HD 189733 b", "Vul", "blue giant", None),
     ("HD 80606 b", "UMa", "eccentric giant", None),
     ("CoRoT-7 b", "Mon", "lava world", None),
-    ("Gliese 667 Cc", "Sco", "temperate world", None),
+    ("Gliese 667 C c", "Sco", "temperate world", None),
     ("Teegarden's Star b", "Ari", "rocky world", None),
     ("GJ 273 b", "CMi", "temperate world", "Luyten b"),
-    ("OGLE-2005-BLG-390L b", "Sgr", "cold super-Earth", None),
+    ("OGLE-2005-BLG-390L b", "Sco", "cold super-Earth", None),
 ]
 
 

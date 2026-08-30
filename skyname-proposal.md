@@ -29,10 +29,16 @@ About six thousand planets have now been found orbiting other stars. Nearly all 
 Those codes are precise and forgettable. Think about what a viewer has to do to remember `Kepler-452b`:
 
 - work out that "Kepler" is a telescope, not a place
-- hold on to a four-digit number that means nothing
+- hold on to a three-digit number that means nothing
 - notice that the small letter on the end is doing an important job
 
 That is three things to remember, and none of them repays the effort, because the number carries no information you can use. There is nothing to picture and nothing to work out. You could not repeat it to a friend the next day.
+
+And `Kepler-452b` is one of the gentle ones. In 2006 a planet was announced that held the record for the most distant then known, and was reported at the time as the most Earth-like yet found. It is called `OGLE-2005-BLG-390L b`. Four separate collaborations are folded into that string, along with a year, an observing field, an event number, and a letter marking the star rather than the planet.
+
+Nobody could use it. So NASA gave the planet an unofficial nickname instead: Hoth, after the ice world in *Star Wars*, because the surface sits at around minus 220 degrees. The nickname stuck well enough that a PBS documentary was later broadcast under the title "Yes, There's Really a Frozen Exoplanet Named Hoth".
+
+That is the whole argument in one object. When a name cannot be spoken, the people whose job is to talk about it will invent one that can — and what they reach for is a borrowed piece of film merchandise, because nothing better has been provided.
 
 You can see the effect in how these objects get talked about. Presenters either skip the name altogether and say "a planet in the constellation Cygnus", or they read the code out and watch the audience drift. Neither is good. The night sky is the one thing every human being has looked at, and we have managed to make it sound like a stock list.
 

@@ -43,7 +43,7 @@ SYSTEMS = [
      [("b", "hot rocky world", None)]),
     ("Gliese 12", "00h15m49s", "-16d08m00s",
      [("b", "temperate world", None)]),
-    ("Gliese 357", "09h36m01s", "-21d39m39s",
+    ("GJ 357", "09h36m01s", "-21d39m39s",
      [("b", "hot rocky world", None), ("c", "warm super-Earth", None)]),
     ("Gliese 3512", "08h41m20s", "+59d29m50s",
      [("b", "unlikely giant", None)]),
