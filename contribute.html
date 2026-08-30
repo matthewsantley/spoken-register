@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contribute &mdash; The Spoken Register</title>
+<meta name="robots" content="index">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#DCE1DF; --card:#F5F6F3; --ink:#14212B; --slate:#5D6C74;
+  --verdigris:#33705E; --ochre:#9A5C17; --rule:#BCC5C2;
+  --display:'Fraunces',Georgia,serif; --body:'Archivo',system-ui,sans-serif; --mono:'IBM Plex Mono',monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+a{color:var(--verdigris)}
+:focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
+.back{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:34px 0 0;text-decoration:none}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(30px,6vw,46px);line-height:1.02;margin:18px 0 0;font-variation-settings:'SOFT' 40,'WONK' 1}
+.standfirst{color:var(--slate);margin:12px 0 0;max-width:60ch}
+section{padding:48px 0 0}
+h2{font-family:var(--display);font-weight:300;font-size:clamp(22px,4vw,29px);margin:0 0 12px;font-variation-settings:'SOFT' 40}
+h3{font-family:var(--display);font-weight:500;font-size:18px;margin:0 0 12px}
+.prose{max-width:62ch}
+.prose p{margin:0 0 14px}
+.prose code{font-family:var(--mono);font-size:13px;background:#E6EAE8;padding:1px 5px}
+.rule{border:0;border-top:1px solid var(--rule);margin:48px 0 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:22px}
+.field{margin-bottom:14px}
+.field label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin-bottom:5px}
+select,input,button{font-family:var(--body);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:2px;padding:10px 12px;width:100%}
+button{cursor:pointer;background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:500;width:auto}
+button:hover{background:var(--verdigris);border-color:var(--verdigris)}
+.err{font-size:13px;color:#8C2B1E;margin:6px 0 0}
+.ok{font-size:15px;color:var(--verdigris);margin:14px 0 0;font-weight:500}
+.snippet{font-family:var(--mono);font-size:12px;background:var(--card);border:1px solid var(--rule);padding:12px;margin:10px 0 0;white-space:pre-wrap;word-break:break-word;display:none;line-height:1.5}
+footer{padding:38px 0 70px;margin-top:48px;border-top:1px solid var(--ink);font-size:13.5px;color:var(--slate)}
+@media(max-width:700px){.cols{grid-template-columns:1fr;gap:26px}.wrap{padding:0 18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="index.html">&larr; The Spoken Register</a>
+<h1>Contribute</h1>
+<p class="standfirst">The register is an open data file. Anyone can add a word from their language or propose an object for naming.</p>
+
+<section>
+  <h2>Add a word from your language</h2>
+  <div class="prose">
+    <p><strong>This is the contribution that matters most.</strong> The pool currently holds words assembled from reference sources, none of them confirmed by a speaker. Every entry has a <code>vouched_by</code> field sitting empty.</p>
+    <p>The rule for the pool is narrow on purpose: the word must mean <em>star</em>, <em>sky</em> or <em>moon</em>. No mythology, no heroes, no place names. Just the plain noun, so that no culture's stories get imposed on anybody else's sky.</p>
+    <p>If you speak a language that is missing, or you can confirm or correct a word already listed, that is the most useful thing you can send. Email <a href="mailto:mattsantley@hotmail.com">mattsantley@hotmail.com</a> or open a pull request.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>Check a proposal</h2>
+  <div class="prose"><p>These panels do not save anything &mdash; the register is only ever changed by the command-line tool. They tell you what would be issued and print the exact line to submit.</p></div>
+  <div class="cols">
+    <div>
+      <h3>An object</h3>
+      <div class="field"><label for="oId">Catalogue identifier</label><input id="oId" placeholder="TOI-2109 b"></div>
+      <div class="field"><label for="oCon">Constellation</label><select id="oCon"></select></div>
+      <div class="field"><label for="oCls">Kind of world</label><input id="oCls" placeholder="ultra-hot giant"></div>
+      <button id="issue">Check</button>
+      <p class="err" id="oErr"></p><p class="ok" id="oOk"></p>
+      <pre class="snippet" id="oSnip"></pre>
+    </div>
+    <div>
+      <h3>A word</h3>
+      <div class="field"><label for="wW">Word</label><input id="wW" placeholder="T&auml;hti"></div>
+      <div class="field"><label for="wL">Language</label><input id="wL" placeholder="Finnish"></div>
+      <div class="field"><label for="wM">Meaning</label><select id="wM"><option>star</option><option>sky</option><option>moon</option></select></div>
+      <button id="addw">Check</button>
+      <p class="err" id="wErr"></p><p class="ok" id="wOk"></p>
+      <pre class="snippet" id="wSnip"></pre>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>How assignment works</h2>
+  <div class="prose">
+    <p>The catalogue identifier is hashed to a position in the word pool. If that word is already used in that constellation, the position steps forward until it finds a free one, so no language piles up in one region of sky. No person picks which language goes with which star.</p>
+    <p><strong>The hash runs once.</strong> After that the name is stored in <code>register.json</code> and that file is the authority. Nothing recalculates a name that has already been issued.</p>
+    <p>That rule matters more than it looks. If names were regenerated on demand, inserting a word into the middle of the pool rather than appending it would silently shift every name in the register. Issue once, append, never recompute.</p>
+    <p>Adding an entry means running <code>issue.py add "TOI-2109 b" Cyg "ultra-hot giant"</code>, then <code>issue.py check</code> to validate, then <code>issue.py sync</code>. Full instructions are in the <a href="https://github.com/matthewsantley/spoken-register">repository README</a>.</p>
+  </div>
+</section>
+
+<footer>
+  Matthew John Santley &middot; <a href="mailto:mattsantley@hotmail.com">mattsantley@hotmail.com</a> &middot; <a href="index.html">back to the register</a>
+</footer>
+
+</div>
+<script>
+const CONMAP={"And":"Andromeda","Ant":"Antlia","Aps":"Apus","Aqr":"Aquarius","Aql":"Aquila","Ara":"Ara","Ari":"Aries","Aur":"Auriga","Boo":"Boötes","Cae":"Caelum","Cam":"Camelopardalis","Cnc":"Cancer","CVn":"Canes Venatici","CMa":"Canis Major","CMi":"Canis Minor","Cap":"Capricornus","Car":"Carina","Cas":"Cassiopeia","Cen":"Centaurus","Cep":"Cepheus","Cet":"Cetus","Cha":"Chamaeleon","Cir":"Circinus","Col":"Columba","Com":"Coma Berenices","CrA":"Corona Australis","CrB":"Corona Borealis","Crv":"Corvus","Crt":"Crater","Cru":"Crux","Cyg":"Cygnus","Del":"Delphinus","Dor":"Dorado","Dra":"Draco","Equ":"Equuleus","Eri":"Eridanus","For":"Fornax","Gem":"Gemini","Gru":"Grus","Her":"Hercules","Hor":"Horologium","Hya":"Hydra","Hyi":"Hydrus","Ind":"Indus","Lac":"Lacerta","Leo":"Leo","LMi":"Leo Minor","Lep":"Lepus","Lib":"Libra","Lup":"Lupus","Lyn":"Lynx","Lyr":"Lyra","Men":"Mensa","Mic":"Microscopium","Mon":"Monoceros","Mus":"Musca","Nor":"Norma","Oct":"Octans","Oph":"Ophiuchus","Ori":"Orion","Pav":"Pavo","Peg":"Pegasus","Per":"Perseus","Phe":"Phoenix","Pic":"Pictor","Psc":"Pisces","PsA":"Piscis Austrinus","Pup":"Puppis","Pyx":"Pyxis","Ret":"Reticulum","Sge":"Sagitta","Sgr":"Sagittarius","Sco":"Scorpius","Scl":"Sculptor","Sct":"Scutum","Ser":"Serpens","Sex":"Sextans","Tau":"Taurus","Tel":"Telescopium","Tri":"Triangulum","TrA":"Triangulum Australe","Tuc":"Tucana","UMa":"Ursa Major","UMi":"Ursa Minor","Vel":"Vela","Vir":"Virgo","Vol":"Volans","Vul":"Vulpecula"};
+const VOWEL={b:"a",c:"e",d:"i",e:"o",f:"u",g:"ae",h:"ea"};
+const $=id=>document.getElementById(id);
+let DATA=null;
+function fnv(s){let x=2166136261;for(let i=0;i<s.length;i++){x^=s.charCodeAt(i);x=Math.imul(x,16777619)}return x>>>0}
+function letter(id){const t=id.trim().replace(/-/g," ").split(/\s+/).pop();return(t.length===1&&/[a-z]/i.test(t))?t.toLowerCase():"b"}
+function preview(id,stem){
+  const taken=new Set(DATA.register.filter(e=>e.core).map(e=>e.stem+"|"+e.core));
+  let i=fnv(id)%DATA.pool.length;
+  for(let n=0;n<DATA.pool.length;n++){if(!taken.has(stem+"|"+DATA.pool[i].word))break;i=(i+1)%DATA.pool.length}
+  const p=DATA.pool[i];
+  return {word:p,name:stem+" "+p.word+"-"+(VOWEL[letter(id)]||"a"),suffix:VOWEL[letter(id)]||"a"};
+}
+fetch("register.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+  DATA=d;
+  const cs=$("oCon");
+  Object.keys(CONMAP).sort((a,b)=>CONMAP[a].localeCompare(CONMAP[b])).forEach(k=>{
+    const o=document.createElement("option");o.value=k;o.textContent=CONMAP[k]+" ("+k+")";cs.appendChild(o)});
+  cs.value="Cyg";
+}).catch(()=>{$("oErr").textContent="Could not load the register. This page needs to be served over http."});
+
+$("issue").addEventListener("click",()=>{
+  if(!DATA)return;
+  const id=$("oId").value.trim(),stem=$("oCon").value,cls=$("oCls").value.trim();
+  $("oOk").textContent="";$("oSnip").style.display="none";
+  if(!id){$("oErr").textContent="Enter a catalogue identifier first";return}
+  const hit=DATA.register.find(r=>r.id.toLowerCase()===id.toLowerCase());
+  if(hit){$("oErr").textContent="Already on file as "+hit.name;return}
+  $("oErr").textContent="";
+  const p=preview(id,stem);
+  $("oOk").textContent="Would be issued as "+p.name+" \u2014 "+p.word.meaning+" in "+p.word.language;
+  $("oSnip").textContent='issue.py add "'+id+'" '+stem+' "'+cls+'"';
+  $("oSnip").style.display="block";
+});
+$("oId").addEventListener("input",()=>{$("oErr").textContent=""});
+
+$("addw").addEventListener("click",()=>{
+  if(!DATA)return;
+  const w=$("wW").value.trim(),l=$("wL").value.trim(),m=$("wM").value;
+  $("wOk").textContent="";$("wSnip").style.display="none";
+  if(!w||!l){$("wErr").textContent="Both a word and a language are needed";return}
+  if(DATA.pool.some(p=>p.word.toLowerCase()===w.toLowerCase())){$("wErr").textContent="Already in the pool";return}
+  $("wErr").textContent="";
+  $("wOk").textContent="Clear to propose \u2014 then it needs a speaker to vouch for it";
+  $("wSnip").textContent='issue.py word "'+w+'" "'+l+'" '+m;
+  $("wSnip").style.display="block";
+});
+$("wW").addEventListener("input",()=>{$("wErr").textContent=""});
+</script>
+</body>
+</html>
