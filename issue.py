@@ -20,6 +20,7 @@ Licence: MIT
 
 import json
 import os
+import re
 import sys
 from datetime import date
 
@@ -76,7 +77,7 @@ SEED_POOL = [
     ("Estrela", "Portuguese", "star"), ("Kintana", "Malagasy", "star"),
     ("Nyenyezi", "Chichewa", "star"), ("Tauraro", "Hausa", "star"),
     ("Biddew", "Wolof", "star"), ("Gwiazda", "Polish", "star"),
-    ("Fetuu", "Tongan", "star"), ("Aku", "Greenlandic", "star"),
+    ("Fetuu", "Tongan", "star"),
     ("Tsuki", "Japanese", "moon"), ("Marama", "Māori", "moon"),
     ("Killa", "Quechua", "moon"), ("Mahina", "Hawaiian", "moon"),
     ("Qamar", "Arabic", "moon"), ("Bulan", "Malay", "moon"),
@@ -88,8 +89,101 @@ SEED_POOL = [
     ("Taivas", "Finnish", "sky"), ("Ilhuica", "Nahuatl", "sky"),
     ("Izulu", "Zulu", "sky"), ("Tenger", "Mongolian", "sky"),
     ("Akash", "Bengali", "sky"), ("Vaanam", "Tamil", "sky"),
-    ("Trakas", "Lithuanian", "sky"), ("Nebo", "Russian", "sky"),
+    ("Nebo", "Russian", "sky"),
     ("Himinn", "Icelandic", "sky"), ("Sama", "Arabic", "sky"),
+
+    # --- Africa ---------------------------------------------------------
+    ("Nyanga", "Zulu", "moon"), ("Kwenkwezi", "Xhosa", "star"),
+    ("Mwezi", "Chichewa", "moon"), ("Wata", "Hausa", "moon"),
+    ("Weer", "Wolof", "moon"), ("Dayax", "Somali", "moon"),
+    ("Chereka", "Amharic", "moon"), ("Semay", "Amharic", "sky"),
+    ("Volana", "Malagasy", "moon"), ("Lanitra", "Malagasy", "sky"),
+    ("Nyeredzi", "Shona", "star"), ("Mwedzi", "Shona", "moon"),
+    ("Njata", "Kikuyu", "star"), ("Munyenye", "Luganda", "star"),
+    ("Naledi", "Setswana", "star"), ("Kpakpando", "Igbo", "star"),
+    ("Onwa", "Igbo", "moon"), ("Igwe", "Igbo", "sky"),
+    ("Nsoromma", "Twi", "star"), ("Osram", "Twi", "moon"),
+    ("Hoodere", "Fula", "star"), ("Lewru", "Fula", "moon"),
+    ("Dolo", "Bambara", "star"), ("Kalo", "Bambara", "moon"),
+    ("Inyenyeri", "Kinyarwanda", "star"), ("Monzoto", "Lingala", "star"),
+    ("Sanza", "Lingala", "moon"), ("Kokob", "Tigrinya", "star"),
+    ("Urjii", "Oromo", "star"), ("Itri", "Tamazight", "star"),
+    ("Ayyur", "Tamazight", "moon"), ("Ster", "Afrikaans", "star"),
+    ("Maan", "Afrikaans", "moon"), ("Osupa", "Yoruba", "moon"),
+
+    # --- Americas -------------------------------------------------------
+    ("Warawara", "Aymara", "star"), ("Phaxsi", "Aymara", "moon"),
+    ("Jasy", "Guarani", "moon"), ("Metztli", "Nahuatl", "moon"),
+    ("Kaan", "Yucatec Maya", "sky"), ("Galvladi", "Cherokee", "sky"),
+    ("Wicahpi", "Lakota", "star"), ("Hanwi", "Lakota", "moon"),
+    ("Mahpiya", "Lakota", "sky"), ("Taqqiq", "Inuktitut", "moon"),
+    ("Qilak", "Inuktitut", "sky"), ("Qaammat", "Greenlandic", "moon"),
+    ("Wangulen", "Mapudungun", "star"), ("Kuyen", "Mapudungun", "moon"),
+    ("Anang", "Ojibwe", "star"), ("Giizhig", "Ojibwe", "sky"),
+    ("Acahkos", "Cree", "star"), ("Zetwal", "Haitian Creole", "star"),
+    ("Lalin", "Haitian Creole", "moon"), ("Syel", "Haitian Creole", "sky"),
+
+    # --- Europe ---------------------------------------------------------
+    ("Lleuad", "Welsh", "moon"), ("Reul", "Scottish Gaelic", "star"),
+    ("Rollage", "Manx", "star"), ("Steren", "Cornish", "star"),
+    ("Steredenn", "Breton", "star"), ("Loar", "Breton", "moon"),
+    ("Ilargi", "Basque", "moon"), ("Tungl", "Icelandic", "moon"),
+    ("Stjerne", "Norwegian", "star"), ("Himmel", "Norwegian", "sky"),
+    ("Kuu", "Finnish", "moon"), ("Taht", "Estonian", "star"),
+    ("Taevas", "Estonian", "sky"), ("Manu", "Northern Sami", "moon"),
+    ("Albmi", "Northern Sami", "sky"), ("Hold", "Hungarian", "moon"),
+    ("Zvaigzde", "Lithuanian", "star"), ("Dangus", "Lithuanian", "sky"),
+    ("Menulis", "Lithuanian", "moon"), ("Zvaigzne", "Latvian", "star"),
+    ("Debess", "Latvian", "sky"), ("Meness", "Latvian", "moon"),
+    ("Luna", "Russian", "moon"), ("Zorya", "Ukrainian", "star"),
+    ("Misyats", "Ukrainian", "moon"), ("Niebo", "Polish", "sky"),
+    ("Ksiezyc", "Polish", "moon"), ("Hvezda", "Czech", "star"),
+    ("Mesic", "Czech", "moon"), ("Hviezda", "Slovak", "star"),
+    ("Zvijezda", "Croatian", "star"), ("Mjesec", "Croatian", "moon"),
+    ("Stea", "Romanian", "star"), ("Cer", "Romanian", "sky"),
+    ("Asteri", "Greek", "star"), ("Ouranos", "Greek", "sky"),
+    ("Selini", "Greek", "moon"), ("Yll", "Albanian", "star"),
+    ("Hena", "Albanian", "moon"), ("Qiell", "Albanian", "sky"),
+    ("Kewkba", "Maltese", "star"), ("Estrella", "Spanish", "star"),
+    ("Cielo", "Spanish", "sky"), ("Estel", "Catalan", "star"),
+    ("Stella", "Italian", "star"), ("Etoile", "French", "star"),
+    ("Ciel", "French", "sky"), ("Lune", "French", "moon"),
+    ("Estela", "Occitan", "star"), ("Stern", "German", "star"),
+    ("Mond", "German", "moon"), ("Hemel", "Dutch", "sky"),
+    ("Shtern", "Yiddish", "star"), ("Stjer", "Frisian", "star"),
+
+    # --- Asia -----------------------------------------------------------
+    ("Xingxing", "Mandarin", "star"), ("Tian", "Mandarin", "sky"),
+    ("Yueliang", "Mandarin", "moon"), ("Troi", "Vietnamese", "sky"),
+    ("Trang", "Vietnamese", "moon"), ("Chan", "Thai", "moon"),
+    ("Phkay", "Khmer", "star"), ("Khae", "Khmer", "moon"),
+    ("Lintang", "Javanese", "star"), ("Rembulan", "Javanese", "moon"),
+    ("Bentang", "Sundanese", "star"), ("Buwan", "Tagalog", "moon"),
+    ("Bitoon", "Cebuano", "star"), ("Chand", "Hindi", "moon"),
+    ("Natchathiram", "Tamil", "star"), ("Nila", "Tamil", "moon"),
+    ("Chukka", "Telugu", "star"), ("Nakshatra", "Kannada", "star"),
+    ("Ambaram", "Malayalam", "sky"), ("Chandra", "Marathi", "moon"),
+    ("Sitara", "Urdu", "star"), ("Chann", "Punjabi", "moon"),
+    ("Jun", "Nepali", "moon"), ("Taruwa", "Sinhala", "star"),
+    ("Handa", "Sinhala", "moon"), ("Aseman", "Persian", "sky"),
+    ("Mah", "Persian", "moon"), ("Storay", "Pashto", "star"),
+    ("Spogmai", "Pashto", "moon"), ("Stere", "Kurdish", "star"),
+    ("Hiv", "Kurdish", "moon"), ("Gokyuzu", "Turkish", "sky"),
+    ("Ulduz", "Azerbaijani", "star"), ("Zhuldyz", "Kazakh", "star"),
+    ("Aspan", "Kazakh", "sky"), ("Yulduz", "Uzbek", "star"),
+    ("Osmon", "Uzbek", "sky"), ("Sar", "Mongolian", "moon"),
+    ("Karma", "Tibetan", "star"), ("Dawa", "Tibetan", "moon"),
+    ("Namkha", "Tibetan", "sky"), ("Varskvlavi", "Georgian", "star"),
+    ("Mtvare", "Georgian", "moon"), ("Astgh", "Armenian", "star"),
+    ("Lusin", "Armenian", "moon"), ("Kochav", "Hebrew", "star"),
+    ("Shamayim", "Hebrew", "sky"), ("Yareach", "Hebrew", "moon"),
+
+    # --- Pacific --------------------------------------------------------
+    ("Lani", "Hawaiian", "sky"), ("Lagi", "Samoan", "sky"),
+    ("Masina", "Samoan", "moon"), ("Vula", "Fijian", "moon"),
+    ("Fetia", "Tahitian", "star"), ("Hetuu", "Rapa Nui", "star"),
+    ("Iju", "Marshallese", "star"), ("Fitun", "Tetum", "star"),
+    ("Pution", "Chamorro", "star"),
 ]
 
 SEED_OBJECTS = [
@@ -167,10 +261,30 @@ def planet_letter(catalogue_id):
     return tail.lower() if len(tail) == 1 and tail.isalpha() else "b"
 
 
-def issue_name(catalogue_id, stem, pool, taken):
-    """Pick a core word. Deterministic by hash, probing forward on collision
-    so no language accumulates within one constellation."""
-    index = fnv1a(catalogue_id) % len(pool)
+def host_of(catalogue_id):
+    """The system a planet belongs to: the catalogue ID with its planet letter
+    stripped. TRAPPIST-1 b, c and d all belong to host TRAPPIST-1."""
+    return re.sub(r"\s+[b-zB-Z]$", "", catalogue_id.strip())
+
+
+def issue_name(catalogue_id, stem, pool, taken, system_words=None):
+    """Pick a core word for the SYSTEM, not the individual planet.
+
+    Every planet of one star shares its star's word; only the final vowel
+    differs. So the word is chosen by hashing the host, not the full
+    catalogue ID. Deterministic, probing forward on collision so no language
+    accumulates within one constellation.
+
+    system_words maps (stem, host) -> pool entry for systems already named.
+    """
+    host = host_of(catalogue_id)
+    suffix = VOWEL.get(planet_letter(catalogue_id), "a")
+
+    if system_words is not None and (stem, host) in system_words:
+        chosen = system_words[(stem, host)]
+        return chosen, f"{stem} {chosen['word']}-{suffix}", suffix
+
+    index = fnv1a(host) % len(pool)
     for _ in range(len(pool)):
         word = pool[index]["word"]
         if (stem, word) not in taken:
@@ -178,8 +292,23 @@ def issue_name(catalogue_id, stem, pool, taken):
         index = (index + 1) % len(pool)
     else:
         raise SystemExit(f"pool exhausted for {stem}; add words before issuing")
-    suffix = VOWEL.get(planet_letter(catalogue_id), "a")
-    return pool[index], f"{stem} {pool[index]['word']}-{suffix}", suffix
+
+    chosen = pool[index]
+    if system_words is not None:
+        system_words[(stem, host)] = chosen
+    return chosen, f"{stem} {chosen['word']}-{suffix}", suffix
+
+
+def system_map(entries):
+    """Rebuild (stem, host) -> pool entry from what is already in the register,
+    so a new planet joins its system's existing name."""
+    out = {}
+    for e in entries:
+        if e.get("core"):
+            out[(e["stem"], host_of(e["id"]))] = {
+                "word": e["core"], "language": e["language"],
+                "meaning": e["meaning"]}
+    return out
 
 
 def load():
@@ -201,20 +330,20 @@ def taken_pairs(entries):
 def cmd_init():
     pool = [{"word": w, "language": l, "meaning": m, "vouched_by": None}
             for w, l, m in SEED_POOL]
-    entries, taken = [], set()
+    entries, taken, systems = [], set(), {}
     for cid, stem, cls, proper in SEED_OBJECTS:
         if proper:
             entries.append({"id": cid, "stem": stem, "name": proper,
                             "core": None, "language": None, "meaning": None,
                             "suffix": None, "class": cls, "existing_name": True})
             continue
-        chosen, name, suffix = issue_name(cid, stem, pool, taken)
+        chosen, name, suffix = issue_name(cid, stem, pool, taken, systems)
         taken.add((stem, chosen["word"]))
         entries.append({"id": cid, "stem": stem, "name": name,
                         "core": chosen["word"], "language": chosen["language"],
                         "meaning": chosen["meaning"], "suffix": suffix,
                         "class": cls, "existing_name": False})
-    save({"version": "0.1", "updated": None,
+    save({"version": "0.2", "updated": None,
           "author": "Matthew John Santley",
           "contact": "mattsantley@hotmail.com",
           "licence": "MIT",
@@ -231,7 +360,8 @@ def cmd_add(cid, stem, cls=""):
     if any(e["id"].lower() == cid.lower() for e in data["register"]):
         raise SystemExit(f"already in the register: {cid}")
     chosen, name, suffix = issue_name(cid, stem, data["pool"],
-                                      taken_pairs(data["register"]))
+                                      taken_pairs(data["register"]),
+                                      system_map(data["register"]))
     data["register"].append({"id": cid, "stem": stem, "name": name,
                              "core": chosen["word"], "language": chosen["language"],
                              "meaning": chosen["meaning"], "suffix": suffix,
@@ -266,7 +396,7 @@ def cmd_vouch(word, who):
 def cmd_check():
     data = load()
     problems = []
-    seen_ids, seen_pairs = set(), set()
+    seen_ids, seen_pairs, seen_triples = set(), set(), set()
     for e in data["register"]:
         if e["id"] in seen_ids:
             problems.append(f"duplicate identifier: {e['id']}")
@@ -274,10 +404,22 @@ def cmd_check():
         if e["stem"] not in CONSTELLATIONS:
             problems.append(f"unknown constellation {e['stem']} on {e['id']}")
         if e.get("core"):
-            pair = (e["stem"], e["core"])
-            if pair in seen_pairs:
-                problems.append(f"collision: {e['stem']} {e['core']}")
-            seen_pairs.add(pair)
+            pair = (e["stem"], e["core"], host_of(e["id"]))
+            flat = (e["stem"], e["core"])
+            if flat in seen_pairs and pair not in seen_triples:
+                problems.append(
+                    f"two systems share {e['stem']} {e['core']}")
+            seen_pairs.add(flat)
+            seen_triples.add(pair)
+    sysword = {}
+    for e in data["register"]:
+        if e.get("core"):
+            k = (e["stem"], host_of(e["id"]))
+            if k in sysword and sysword[k] != e["core"]:
+                problems.append(
+                    f"system {k[1]} uses two words: {sysword[k]} and {e['core']}")
+            sysword[k] = e["core"]
+
     words = [w["word"].lower() for w in data["pool"]]
     if len(words) != len(set(words)):
         problems.append("duplicate word in the pool")

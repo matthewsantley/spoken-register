@@ -181,6 +181,7 @@ SYSTEMS = [
     ("HD 209458", "22h03m11s", "+18d53m04s", []),
     ("HD 100546", "11h33m25s", "-70d11m41s", [("b", "forming giant", None)]),
     ("CoRoT-7", "06h43m49s", "-01d03m46s", [("c", "hot Neptune", None)]),
+    ("TOI-2109", "16h05m14s", "+16d34m32s", [("b", "ultra-hot giant", None)]),
     ("HD 40307", "05h54m04s", "-60d01m24s",
      [("b", "hot super-Earth", None), ("c", "warm super-Earth", None),
       ("d", "warm super-Earth", None)]),
@@ -211,7 +212,8 @@ def main():
                     "class": cls, "existing_name": True})
             else:
                 chosen, name, suffix = iss.issue_name(
-                    cid, stem, data["pool"], iss.taken_pairs(data["register"]))
+                    cid, stem, data["pool"], iss.taken_pairs(data["register"]),
+                    iss.system_map(data["register"]))
                 data["register"].append({
                     "id": cid, "stem": stem, "name": name,
                     "core": chosen["word"], "language": chosen["language"],

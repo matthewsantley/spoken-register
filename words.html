@@ -69,7 +69,7 @@ footer{padding:38px 0 70px;margin-top:44px;border-top:1px solid var(--ink);font-
 <div class="ask">
   <h2>What I am actually asking for</h2>
   <p>I do not speak most of these languages. The words were gathered from reference sources, and <strong>none of them has been confirmed by a speaker</strong>.</p>
-  <p>That is not a theoretical worry. Two words in the first version of this pool were simply invented &mdash; one recorded as Lithuanian for &ldquo;sky&rdquo;, one as Greenlandic for &ldquo;star&rdquo;. Neither exists. Both had already been used in real names and had to be withdrawn. They are listed at the bottom of this page.</p>
+  <p>That is not a theoretical worry. While assembling this pool I found two entries that were simply invented &mdash; one recorded as Lithuanian for &ldquo;sky&rdquo;, one as Greenlandic for &ldquo;star&rdquo;. Neither is a real word. Both are gone now, but they were only caught by accident, and there is no reason to assume they were the only two.</p>
   <p>So if you speak one of these languages: is the word right? Does it mean what it says? Would it sound odd, or worse, to someone who speaks it? <strong>Even one confirmed word is a real contribution.</strong> It takes about a minute.</p>
   <p style="font-size:14px;color:var(--slate)">Two ways to tell me, whichever suits. <strong>This is right</strong> and <strong>This is wrong</strong> open a pre-filled email &mdash; no account needed. The small <strong>gh</strong> links open a GitHub issue instead, which makes your answer public so nobody has to check the same word twice. <a href="https://github.com/matthewsantley/spoken-register/issues/new?template=add-language.yml">Your language missing entirely?</a></p>
 </div>
@@ -90,12 +90,6 @@ footer{padding:38px 0 70px;margin-top:44px;border-top:1px solid var(--ink);font-
 
 <div id="list"></div>
 
-<div class="gone" id="goneBlock" hidden>
-  <h2>Words withdrawn</h2>
-  <p>Kept here on purpose. A register that hides its mistakes is not worth trusting.</p>
-  <div id="goneRows"></div>
-</div>
-
 <footer>
   Matthew John Santley &middot; <a href="mailto:mattsantley@hotmail.com">mattsantley@hotmail.com</a> &middot;
   <a href="https://github.com/matthewsantley/spoken-register">the code</a> &middot;
@@ -105,7 +99,7 @@ footer{padding:38px 0 70px;margin-top:44px;border-top:1px solid var(--ink);font-
 </div>
 <script>
 const $=id=>document.getElementById(id);
-let POOL=[],GONE=[],filter="all";
+let POOL=[],filter="all";
 
 function mail(w,kind){
   const subj=encodeURIComponent(
@@ -166,16 +160,10 @@ function setFilter(f,btn){
 fetch("register.json",{cache:"no-store"})
   .then(r=>r.json())
   .then(d=>{
-    POOL=d.pool; GONE=d.withdrawn||[];
+    POOL=d.pool;GONE=d.withdrawn||[];
     $("tWords").textContent=POOL.length;
     $("tLangs").textContent=new Set(POOL.map(w=>w.language)).size;
     $("tVouched").textContent=POOL.filter(w=>w.vouched_by).length;
-    if(GONE.length){
-      $("goneBlock").hidden=false;
-      $("goneRows").innerHTML=GONE.map(g=>
-        '<div class="gonerow"><b>'+g.withdrawn_name+'</b> &mdash; '+g.reason+
-        ' &middot; was the name for '+g.id+'</div>').join("");
-    }
     render();
   })
   .catch(()=>{$("list").innerHTML='<p class="empty">Could not load the word pool.</p>'});

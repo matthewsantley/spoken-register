@@ -155,7 +155,7 @@ The list is a public file that anyone can read, copy or correct. There are two w
 
 Two rules keep the list trustworthy:
 
-- **Names are only ever added, never taken back.** Once given, a name stays given. There is exactly one exception, described below.
+- **Names are only ever added, never taken back.** Once given, a name stays given.
 - **No language may dominate.** If the calculation lands on a word already used in that constellation, it moves along to the next free one. Over the whole list this spreads the languages evenly.
 
 None of this needs anyone's permission to be useful. It is a list, published openly, that anyone may use. If it is good, people will use it.
@@ -165,10 +165,6 @@ None of this needs anyone's permission to be useful. It is a list, published ope
 **Some constellations will run out of words.** The Kepler telescope alone dropped thousands of planets into Cygnus. A pool of fifty words will not stretch that far. It needs to grow into the hundreds — which is achievable, since there are roughly seven thousand living languages — and the busiest constellations may eventually need two words rather than one. Clumsy, but only where the crowding demands it.
 
 **The Latin abbreviations.** Discussed in part five. A reasonable trade, but a trade all the same.
-
-**Words can turn out not to exist.** This has already happened. Two words in the original pool — one recorded as Lithuanian for "sky", one as Greenlandic for "star" — were simply wrong. Neither was a real word. Both had already been used in names.
-
-That forces the single exception to the "never taken back" rule. A name built on a word that does not exist cannot be allowed to stand, so it is withdrawn, the withdrawal and its reason are written into the list permanently, and a fresh name is issued. Nothing is quietly deleted; the record shows what happened. This is the only circumstance in which a name is withdrawn, and it exists precisely because the checking described in part seven had not yet been done.
 
 **Checking words takes time.** Getting speakers to confirm each word is the real bottleneck, and it should be. A list that grows slowly and correctly is worth far more than one that grows quickly and offends people.
 
