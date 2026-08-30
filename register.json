@@ -241,12 +241,6 @@
       "vouched_by": null
     },
     {
-      "word": "Aku",
-      "language": "Greenlandic",
-      "meaning": "star",
-      "vouched_by": null
-    },
-    {
       "word": "Tsuki",
       "language": "Japanese",
       "meaning": "moon",
@@ -379,12 +373,6 @@
       "vouched_by": null
     },
     {
-      "word": "Trakas",
-      "language": "Lithuanian",
-      "meaning": "sky",
-      "vouched_by": null
-    },
-    {
       "word": "Nebo",
       "language": "Russian",
       "meaning": "sky",
@@ -400,6 +388,996 @@
       "word": "Sama",
       "language": "Arabic",
       "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Nyanga",
+      "language": "Zulu",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Kwenkwezi",
+      "language": "Xhosa",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Mwezi",
+      "language": "Chichewa",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Wata",
+      "language": "Hausa",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Weer",
+      "language": "Wolof",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Dayax",
+      "language": "Somali",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Chereka",
+      "language": "Amharic",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Semay",
+      "language": "Amharic",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Volana",
+      "language": "Malagasy",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Lanitra",
+      "language": "Malagasy",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Nyeredzi",
+      "language": "Shona",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Mwedzi",
+      "language": "Shona",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Njata",
+      "language": "Kikuyu",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Munyenye",
+      "language": "Luganda",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Naledi",
+      "language": "Setswana",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Kpakpando",
+      "language": "Igbo",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Onwa",
+      "language": "Igbo",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Igwe",
+      "language": "Igbo",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Nsoromma",
+      "language": "Twi",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Osram",
+      "language": "Twi",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Hoodere",
+      "language": "Fula",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Lewru",
+      "language": "Fula",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Dolo",
+      "language": "Bambara",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Kalo",
+      "language": "Bambara",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Inyenyeri",
+      "language": "Kinyarwanda",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Monzoto",
+      "language": "Lingala",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Sanza",
+      "language": "Lingala",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Kokob",
+      "language": "Tigrinya",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Urjii",
+      "language": "Oromo",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Itri",
+      "language": "Tamazight",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Ayyur",
+      "language": "Tamazight",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Ster",
+      "language": "Afrikaans",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Maan",
+      "language": "Afrikaans",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Osupa",
+      "language": "Yoruba",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Warawara",
+      "language": "Aymara",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Phaxsi",
+      "language": "Aymara",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Jasy",
+      "language": "Guarani",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Metztli",
+      "language": "Nahuatl",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Kaan",
+      "language": "Yucatec Maya",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Galvladi",
+      "language": "Cherokee",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Wicahpi",
+      "language": "Lakota",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Hanwi",
+      "language": "Lakota",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Mahpiya",
+      "language": "Lakota",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Taqqiq",
+      "language": "Inuktitut",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Qilak",
+      "language": "Inuktitut",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Qaammat",
+      "language": "Greenlandic",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Wangulen",
+      "language": "Mapudungun",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Kuyen",
+      "language": "Mapudungun",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Anang",
+      "language": "Ojibwe",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Giizhig",
+      "language": "Ojibwe",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Acahkos",
+      "language": "Cree",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Zetwal",
+      "language": "Haitian Creole",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Lalin",
+      "language": "Haitian Creole",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Syel",
+      "language": "Haitian Creole",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Lleuad",
+      "language": "Welsh",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Reul",
+      "language": "Scottish Gaelic",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Rollage",
+      "language": "Manx",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Steren",
+      "language": "Cornish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Steredenn",
+      "language": "Breton",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Loar",
+      "language": "Breton",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Ilargi",
+      "language": "Basque",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Tungl",
+      "language": "Icelandic",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Stjerne",
+      "language": "Norwegian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Himmel",
+      "language": "Norwegian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Kuu",
+      "language": "Finnish",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Taht",
+      "language": "Estonian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Taevas",
+      "language": "Estonian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Manu",
+      "language": "Northern Sami",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Albmi",
+      "language": "Northern Sami",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Hold",
+      "language": "Hungarian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Zvaigzde",
+      "language": "Lithuanian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Dangus",
+      "language": "Lithuanian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Menulis",
+      "language": "Lithuanian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Zvaigzne",
+      "language": "Latvian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Debess",
+      "language": "Latvian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Meness",
+      "language": "Latvian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Luna",
+      "language": "Russian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Zorya",
+      "language": "Ukrainian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Misyats",
+      "language": "Ukrainian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Niebo",
+      "language": "Polish",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Ksiezyc",
+      "language": "Polish",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Hvezda",
+      "language": "Czech",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Mesic",
+      "language": "Czech",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Hviezda",
+      "language": "Slovak",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Zvijezda",
+      "language": "Croatian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Mjesec",
+      "language": "Croatian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Stea",
+      "language": "Romanian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Cer",
+      "language": "Romanian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Asteri",
+      "language": "Greek",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Ouranos",
+      "language": "Greek",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Selini",
+      "language": "Greek",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Yll",
+      "language": "Albanian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Hena",
+      "language": "Albanian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Qiell",
+      "language": "Albanian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Kewkba",
+      "language": "Maltese",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Estrella",
+      "language": "Spanish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Cielo",
+      "language": "Spanish",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Estel",
+      "language": "Catalan",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Stella",
+      "language": "Italian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Etoile",
+      "language": "French",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Ciel",
+      "language": "French",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Lune",
+      "language": "French",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Estela",
+      "language": "Occitan",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Stern",
+      "language": "German",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Mond",
+      "language": "German",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Hemel",
+      "language": "Dutch",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Shtern",
+      "language": "Yiddish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Stjer",
+      "language": "Frisian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Xingxing",
+      "language": "Mandarin",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Tian",
+      "language": "Mandarin",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Yueliang",
+      "language": "Mandarin",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Troi",
+      "language": "Vietnamese",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Trang",
+      "language": "Vietnamese",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Chan",
+      "language": "Thai",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Phkay",
+      "language": "Khmer",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Khae",
+      "language": "Khmer",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Lintang",
+      "language": "Javanese",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Rembulan",
+      "language": "Javanese",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Bentang",
+      "language": "Sundanese",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Buwan",
+      "language": "Tagalog",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Bitoon",
+      "language": "Cebuano",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Chand",
+      "language": "Hindi",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Natchathiram",
+      "language": "Tamil",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Nila",
+      "language": "Tamil",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Chukka",
+      "language": "Telugu",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Nakshatra",
+      "language": "Kannada",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Ambaram",
+      "language": "Malayalam",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Chandra",
+      "language": "Marathi",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Sitara",
+      "language": "Urdu",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Chann",
+      "language": "Punjabi",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Jun",
+      "language": "Nepali",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Taruwa",
+      "language": "Sinhala",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Handa",
+      "language": "Sinhala",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Aseman",
+      "language": "Persian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Mah",
+      "language": "Persian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Storay",
+      "language": "Pashto",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Spogmai",
+      "language": "Pashto",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Stere",
+      "language": "Kurdish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Hiv",
+      "language": "Kurdish",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Gokyuzu",
+      "language": "Turkish",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Ulduz",
+      "language": "Azerbaijani",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Zhuldyz",
+      "language": "Kazakh",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Aspan",
+      "language": "Kazakh",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Yulduz",
+      "language": "Uzbek",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Osmon",
+      "language": "Uzbek",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Sar",
+      "language": "Mongolian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Karma",
+      "language": "Tibetan",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Dawa",
+      "language": "Tibetan",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Namkha",
+      "language": "Tibetan",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Varskvlavi",
+      "language": "Georgian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Mtvare",
+      "language": "Georgian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Astgh",
+      "language": "Armenian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Lusin",
+      "language": "Armenian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Kochav",
+      "language": "Hebrew",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Shamayim",
+      "language": "Hebrew",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Yareach",
+      "language": "Hebrew",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Lani",
+      "language": "Hawaiian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Lagi",
+      "language": "Samoan",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Masina",
+      "language": "Samoan",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Vula",
+      "language": "Fijian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Fetia",
+      "language": "Tahitian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Hetuu",
+      "language": "Rapa Nui",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Iju",
+      "language": "Marshallese",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Fitun",
+      "language": "Tetum",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Pution",
+      "language": "Chamorro",
+      "meaning": "star",
       "vouched_by": null
     }
   ],
@@ -1021,17 +1999,6 @@
       "existing_name": false
     },
     {
-      "id": "TOI-2109 b",
-      "stem": "Cyg",
-      "name": "Cyg Trakas-a",
-      "core": "Trakas",
-      "language": "Lithuanian",
-      "meaning": "sky",
-      "suffix": "a",
-      "class": "ultra-hot giant",
-      "existing_name": false
-    },
-    {
       "id": "Proxima Centauri c",
       "stem": "Cen",
       "name": "Cen Fetu-e",
@@ -1392,17 +2359,6 @@
       "meaning": "star",
       "suffix": "e",
       "class": "dense warm world",
-      "existing_name": false
-    },
-    {
-      "id": "HD 20794 d",
-      "stem": "Eri",
-      "name": "Eri Aku-i",
-      "core": "Aku",
-      "language": "Greenlandic",
-      "meaning": "star",
-      "suffix": "i",
-      "class": "temperate super-Earth",
       "existing_name": false
     },
     {
@@ -2372,6 +3328,44 @@
       "suffix": "i",
       "class": "warm super-Earth",
       "existing_name": false
+    },
+    {
+      "id": "TOI-2109 b",
+      "stem": "Cyg",
+      "name": "Cyg Iju-a",
+      "core": "Iju",
+      "language": "Marshallese",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "",
+      "existing_name": false,
+      "replaces": "Cyg Trakas-a"
+    },
+    {
+      "id": "HD 20794 d",
+      "stem": "Eri",
+      "name": "Eri Osram-i",
+      "core": "Osram",
+      "language": "Twi",
+      "meaning": "moon",
+      "suffix": "i",
+      "class": "",
+      "existing_name": false,
+      "replaces": "Eri Aku-i"
+    }
+  ],
+  "withdrawn": [
+    {
+      "id": "TOI-2109 b",
+      "withdrawn_name": "Cyg Trakas-a",
+      "reason": "not a Lithuanian word; Lithuanian for sky is dangus",
+      "note": "Name withdrawn because the word it used was not real. Recorded here rather than deleted."
+    },
+    {
+      "id": "HD 20794 d",
+      "withdrawn_name": "Eri Aku-i",
+      "reason": "not a Greenlandic word; Greenlandic for star is ulloriaq",
+      "note": "Name withdrawn because the word it used was not real. Recorded here rather than deleted."
     }
   ]
 }

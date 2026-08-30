@@ -18,6 +18,7 @@ object sits in, with its distinctive part drawn from a pool of words meaning
 | `register.json` | **The record.** Every name ever issued, plus the word pool. |
 | `issue.py` | The tool that issues names and writes them to the register. |
 | `expand.py` | One-off batch loader. Derives constellations from coordinates via astropy. |
+| `poolwork.py` | One-off: withdrew two fabricated words, expanded the pool to 229. |
 | `index.html` | The public page. Reads `register.json` and displays it. |
 | `contribute.html` | Contributor page: proposal previews and how assignment works. |
 | `skyname-proposal.md` | The proposal paper explaining the scheme and why. |
@@ -62,7 +63,9 @@ silently. Names are issued once and appended, never recomputed.
 ./issue.py vouch "Tähti" "name of the speaker who confirmed it"
 ```
 
-Every word carries a `vouched_by` field. **They are currently all empty.** The
+Every word carries a `vouched_by` field. **All 229 of them are currently empty.**
+
+This is not a formality. Two words in the first version of the pool were simply invented — one claimed to be Lithuanian for "sky", one Greenlandic for "star". Neither exists. Both had already been used in issued names, and both had to be withdrawn (see the `withdrawn` section of `register.json`, which records what happened rather than hiding it). The
 pool was assembled from reference sources and has not been checked by native
 speakers. A word that means "star" in a dictionary can mean something
 regrettable in a neighbouring dialect, and only speakers catch that. Treat the

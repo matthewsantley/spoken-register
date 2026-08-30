@@ -155,7 +155,7 @@ The list is a public file that anyone can read, copy or correct. There are two w
 
 Two rules keep the list trustworthy:
 
-- **Names are only ever added, never taken back.** Once given, a name stays given.
+- **Names are only ever added, never taken back.** Once given, a name stays given. There is exactly one exception, described below.
 - **No language may dominate.** If the calculation lands on a word already used in that constellation, it moves along to the next free one. Over the whole list this spreads the languages evenly.
 
 None of this needs anyone's permission to be useful. It is a list, published openly, that anyone may use. If it is good, people will use it.
@@ -165,6 +165,10 @@ None of this needs anyone's permission to be useful. It is a list, published ope
 **Some constellations will run out of words.** The Kepler telescope alone dropped thousands of planets into Cygnus. A pool of fifty words will not stretch that far. It needs to grow into the hundreds — which is achievable, since there are roughly seven thousand living languages — and the busiest constellations may eventually need two words rather than one. Clumsy, but only where the crowding demands it.
 
 **The Latin abbreviations.** Discussed in part five. A reasonable trade, but a trade all the same.
+
+**Words can turn out not to exist.** This has already happened. Two words in the original pool — one recorded as Lithuanian for "sky", one as Greenlandic for "star" — were simply wrong. Neither was a real word. Both had already been used in names.
+
+That forces the single exception to the "never taken back" rule. A name built on a word that does not exist cannot be allowed to stand, so it is withdrawn, the withdrawal and its reason are written into the list permanently, and a fresh name is issued. Nothing is quietly deleted; the record shows what happened. This is the only circumstance in which a name is withdrawn, and it exists precisely because the checking described in part seven had not yet been done.
 
 **Checking words takes time.** Getting speakers to confirm each word is the real bottleneck, and it should be. A list that grows slowly and correctly is worth far more than one that grows quickly and offends people.
 
@@ -205,7 +209,7 @@ The calculation is run **once**, when the name is first given. The written-down 
 
 ## Appendix B — What has been built
 
-A working version accompanies this paper: the list itself (`register.json`), a small program that adds names to it (`issue.py`), and a web page that displays it (`index.html`). Constellations are not typed in by hand: each host star's position is checked against the official IAU boundaries, so that part of every name is derived rather than guessed. The list currently holds 179 objects, using words from 44 languages across 42 constellations. Twenty of those already carry a proper name and are recorded rather than renamed.
+A working version accompanies this paper: the list itself (`register.json`), a small program that adds names to it (`issue.py`), and a web page that displays it (`index.html`). Constellations are not typed in by hand: each host star's position is checked against the official IAU boundaries, so that part of every name is derived rather than guessed. The list currently holds 179 objects, drawing on a pool of 229 words from 117 languages, across 42 constellations. Twenty of those already carry a proper name and are recorded rather than renamed.
 
 The program enforces the "never changed" rule directly. Names are added to the end of the list and the list is never rebuilt from scratch. A checking command looks for duplicates, unknown constellations and clashes.
 
