@@ -1,110 +1,112 @@
 # A Spoken Register for the Sky
 
-## A proposal for human-readable aliases for stars and exoplanets
+## A proposal for giving stars and planets names that people can actually say
 
-**Matthew John Santley**
-Independent · Lancashire, United Kingdom
+**Matthew John Santley**\
+Independent · Lancashire, United Kingdom\
 mattsantley@hotmail.com
 
-**Draft 0.1 — for discussion — 30 August 2026**
+**Draft 0.2 — for discussion — 30 August 2026**
 
-Licensed CC BY 4.0. The reference implementation and register are separately licensed MIT.
+Licensed CC BY 4.0. The register and the software that goes with it are licensed separately, under MIT.
 
 ---
 
-## Abstract
+## Summary
 
-Astronomical catalogue identifiers are excellent primary keys and poor names. They are unique, stable and machine-tractable, which is exactly what a catalogue needs. But when a broadcaster reads `2MASS J05551028+0724255` aloud to a general audience, the audience stops listening. This paper argues that the problem is not the identifier but the absence of a display layer above it, and proposes one: a *spoken register* of pronounceable aliases, built from words for "star", "sky" and "moon" contributed by every language that wants to take part, anchored to the constellation each object sits in.
+Astronomers name the objects they find with reference codes: `Kepler-452b`, `WASP-121b`, `2MASS J05551028+0724255`. These codes work well for astronomers. They work badly for everyone else, because there is nothing in them a listener can hold on to.
 
-The register is not a replacement for catalogue IDs and asks nothing of working astronomy. It is an alias table, maintained openly, for the few thousand objects that appear in public conversation.
+This paper suggests we stop trying to fix the codes and add something alongside them instead: a second name for each object, meant for saying out loud. The name would tell you which constellation to look in, and would take its distinctive part from a pool of words meaning "star", "sky" or "moon", contributed by languages from all over the world.
+
+Nothing about how astronomy works would change. The reference codes stay exactly as they are. This is simply a list of friendlier names kept alongside them, for the few thousand objects that ordinary people ever hear about.
 
 ---
 
 ## 1. The problem
 
-Roughly six thousand exoplanets are currently confirmed. Almost all of them are known publicly by their discovery-survey identifier: `Kepler-452b`, `WASP-121b`, `TOI-700d`, `HD 209458 b`.
+About six thousand planets have now been found orbiting other stars. Nearly all of them are known publicly by the code the discovery team gave them.
 
-These names are unambiguous and unmemorable. Consider what a listener has to do to retain `Kepler-452b`:
+Those codes are precise and forgettable. Think about what a viewer has to do to remember `Kepler-452b`:
 
-- recognise "Kepler" as a telescope rather than a place
-- retain a four-digit number that encodes nothing
-- notice that the lowercase letter is doing significant work
+- work out that "Kepler" is a telescope, not a place
+- hold on to a four-digit number that means nothing
+- notice that the small letter on the end is doing an important job
 
-Three separate cognitive tasks, none of which rewards the effort, because the number carries no information the listener can use. There is nothing to hook a memory onto and nothing to reason from. The name cannot be repeated to a friend the next day.
+That is three things to remember, and none of them repays the effort, because the number carries no information you can use. There is nothing to picture and nothing to work out. You could not repeat it to a friend the next day.
 
-The result is a documented pattern in science communication: broadcasters either avoid naming objects at all ("a planet in the constellation Cygnus"), or they read the identifier out and the audience's attention drops. Neither is good. The sky is the most universally shared object of human curiosity, and we have made it sound like a parts catalogue.
+You can see the effect in how these objects get talked about. Presenters either skip the name altogether and say "a planet in the constellation Cygnus", or they read the code out and watch the audience drift. Neither is good. The night sky is the one thing every human being has looked at, and we have managed to make it sound like a stock list.
 
-## 2. Why the current system is the way it is
+## 2. Why the names are like this
 
-It is worth being clear that the existing system is not an accident or a failure of imagination. It solves real problems that any replacement must also solve.
+The current system is not careless. It solves real problems, and any replacement would have to solve them too.
 
-**Scale.** The Gaia mission has catalogued close to two billion stars. There is no reservoir of memorable human names of that size, and no committee capable of issuing them.
+**There are too many objects for names.** The Gaia space telescope has catalogued nearly two billion stars. Nobody has two billion memorable names, and no committee could invent them.
 
-**Uniqueness and stability.** A catalogue ID must resolve to exactly one object, permanently, across every paper ever published referencing it. Renaming breaks the literature.
+**Codes must never change.** A code has to point at one object and one object only, permanently, across every scientific paper ever written about it. Renaming things breaks the record.
 
-**Machine tractability.** Many identifiers are coordinates. `2MASS J05551028+0724255` encodes a right ascension of 05h 55m 10.28s and a declination of +07° 24′ 25.5″. It is ugly precisely because it is useful: it tells an instrument where to point.
+**Some codes are instructions.** `2MASS J05551028+0724255` looks like noise but is actually a position in the sky, precise to a fraction of a hair's breadth. It is ugly because it is useful: it tells a telescope exactly where to point.
 
-**Semantic caution.** Astronomy has been burned by meaningful names. A "planetary nebula" has nothing to do with planets. The "Great Attractor" oversells what is actually known. A meaningless number cannot become wrong when the measurement improves.
+**Meaningful names go wrong.** Astronomy has been caught out by this before. A "planetary nebula" has nothing to do with planets. The "Great Attractor" claims more than anyone actually knows. A meaningless number, whatever else you say about it, can never turn out to be false.
 
-**Cultural caution.** The International Astronomical Union is deliberately careful about naming rights after a long history of European names being applied to everything visible. Its NameExoWorlds campaigns are slow and consultative by design, not by neglect.
+**Naming has a bad history.** For a long time, European names were stamped on everything anyone found, anywhere. The International Astronomical Union, which oversees naming, is deliberately slow and careful about this now. That caution is a feature, not an obstacle.
 
-Any proposal that ignores these constraints deserves to be ignored in turn.
+Any suggestion that ignores these five points deserves to be ignored in turn.
 
-## 3. The reframing
+## 3. The idea
 
-The insight this proposal rests on is borrowed from software engineering.
+Here is the shift in thinking the whole proposal rests on.
 
-A database has a primary key and it has a display name. The primary key is unique, stable and meaningless — that is its job. The display name is readable, mutable and secondary — that is its job. Nobody argues that a customer record should have a readable primary key. Nobody argues that customers should be shown their database row ID.
+Almost every organisation keeps two kinds of name for the same thing. A hospital gives you a patient number; the staff still call you by your name. A shop's stock system has a barcode for a jacket; the label still says "navy wool coat". The number is for the machine and must never change. The name is for people and can be whatever helps them.
 
-Astronomy has built an excellent primary key and never built the display layer. Broadcasters are, in effect, reading row IDs out loud on television, because there is nothing else to read.
+Astronomy has built an excellent set of numbers and never got round to the names. So presenters end up reading the numbers out on television, because there is nothing else to read.
 
-**The proposal is therefore not to rename anything.** It is to build the missing view.
+**The proposal is not to rename anything.** It is to add the missing half.
 
-## 4. Design principles
+## 4. The rules I set myself
 
-1. **Additive, never authoritative.** Catalogue IDs remain the identifier of record. The register is an alias table. Nothing in the astronomical literature needs to change.
+1. **Add, never replace.** The existing codes remain the official identifier. This is a second name kept alongside. No scientific paper has to change.
 
-2. **Defer to existing names.** Where an object already has a proper name — IAU-issued, traditional, Arabic, Greek, Polynesian — that name wins. The register records it and issues nothing new.
+2. **Respect names that already exist.** Where an object already has a real name — given by the IAU, or handed down in Arabic, Greek, Polynesian or any other tradition — that name wins. The list records it and invents nothing.
 
-3. **Say the location.** The one durable, publicly meaningful fact about an object is which constellation it lies in. Constellation membership is fixed by IAU boundary, does not change with re-measurement, and is the fact a listener can act on. It goes in the name.
+3. **Say where it is.** The one useful fact about an object that ordinary people can act on is which constellation it sits in. Constellation boundaries are fixed, and they do not shift when someone takes a better measurement. So that goes in the name.
 
-4. **Keep physics out of the name.** Classification changes when instruments improve. A "hot Jupiter" that turns out to be a brown dwarf must not require renaming. Class information travels alongside the name, never inside it.
+4. **Keep the science out of the name.** How an object is classified changes as instruments improve. Something described today as a giant planet might be reclassified tomorrow. That must not force a rename.
 
-5. **No culture privileged.** No mythology, no pantheon, no nation's heroes. The pool is the plainest possible noun.
+5. **No culture gets to go first.** No gods, no heroes, no explorers, no nations. Just the plainest possible word.
 
-6. **Deterministic, not chosen.** Assignment is by algorithm from the catalogue ID. No committee decides which language gets which star, because no human decides at all.
+6. **Nobody chooses.** Which language goes with which star is decided by a calculation, not by a person or a committee.
 
-7. **Immutable once issued.** A name is generated once and then stored. It is never regenerated, because catalogue IDs occasionally change and a derived name that drifts is worse than no name.
+7. **Once given, never changed.** A name is worked out once and then written down. It is never worked out again.
 
-## 5. The scheme
+## 5. How a name is built
 
-A register name has three fields. Two are part of the name; one travels with it.
+A name has two parts, plus a description that travels with it but is not part of it.
 
-### Field 1 — Stem (where it is)
+### Part one — where it is
 
-The IAU three-letter constellation abbreviation, which already exists and is already standard: `Cyg` (Cygnus), `Peg` (Pegasus), `Aqr` (Aquarius), `Dor` (Dorado).
+The standard three-letter abbreviation for the constellation. These already exist and astronomers already use them every day: `Cyg` for Cygnus, `Peg` for Pegasus, `Aqr` for Aquarius, `Dor` for Dorado.
 
-This costs nothing to adopt because astronomers already use these codes daily. It is the one field that requires no new agreement. It is Latin, which slightly undercuts the inclusion argument in Field 2 — but it is an existing shared standard rather than a fresh imposition, and it buys immediate familiarity.
+Using them costs nothing, because nobody has to agree to anything new. They are Latin, which does slightly undercut the argument about not favouring any one culture. That is a genuine compromise rather than a solved problem — but they are an existing shared standard rather than something freshly imposed, and they buy instant familiarity with the people who would have to adopt this.
 
-### Field 2 — Core (the distinctive part)
+### Part two — the distinctive word
 
-A word from the global pool, assigned deterministically by hashing the catalogue ID.
+A word taken from a shared pool, chosen by calculation from the object's reference code.
 
-**The unifying rule for the pool: every word means "star", "sky" or "moon" in some human language.**
+**Here is the rule that holds the pool together: every word in it means "star", "sky" or "moon" in some human language.**
 
-This is the answer to the inclusion problem. Every human culture has looked up and named what it saw. The pool is built from those plain nouns — *nyota* (Swahili), *bituin* (Tagalog), *quyllur* (Quechua), *seren* (Welsh), *whetū* (Māori), *ulloriaq* (Inuktitut), *noquisi* (Cherokee), *biddéw* (Wolof), *kintana* (Malagasy).
+That is the answer to the fairness problem. Every culture on Earth has looked up and named what it saw. The pool is built from those plain, ordinary nouns — *nyota* in Swahili, *bituin* in Tagalog, *quyllur* in Quechua, *seren* in Welsh, *whetū* in Māori, *ulloriaq* in Inuktitut, *noquisi* in Cherokee, *biddéw* in Wolof, *kintana* in Malagasy.
 
-Nobody's gods are imposed on anybody. No nation's explorers are commemorated. The sky is named, in every language, after the sky.
+No one's gods are pushed onto anyone else. No country's explorers are commemorated. The sky is named, in every language, after the sky.
 
-Language of origin is recorded in the register alongside the name, so the provenance is visible and creditable rather than erased.
+Which language each word came from is recorded next to it, so the origin stays visible and can be credited rather than quietly lost.
 
-### Field 3 — Suffix (which body in the system)
+### Part three — which planet
 
-A star and its planets sit in the same place and share the same pool word: the word is issued to the *system*, not to each object separately. The suffix is the only thing that separates them.
+A star and its planets sit in the same place and share the same word from the pool: the word is given to the whole system, not to each object separately. A final vowel is what tells them apart.
 
-The star takes no suffix. Each planet takes a vowel mapped from its IAU letter:
+The star gets no vowel. Each planet gets one, matching the letter astronomers already use:
 
-| IAU letter | Suffix |
+| Astronomers' letter | Ending |
 |---|---|
 | b | -a |
 | c | -e |
@@ -119,112 +121,102 @@ So the Kepler-452 system reads:
 - Kepler-452, the star → **Cyg Stjarna**
 - Kepler-452 b, the planet → **Cyg Stjarna-a**
 
-### The class tag — spoken alongside, never part of the name
+### And separately: what kind of thing it is
 
-Every entry also carries a short descriptor: *the rocky world*, *the ultra-hot giant*, *the pulsar world*. It is what a presenter says immediately before the name — "the rocky world Aqr Quyllur-o" — in the same way one says "the physicist Marie Curie". The descriptor tells a listener what kind of object is coming. It is not part of what the object is called.
+Every entry also carries a short description — *the rocky world*, *the scorching giant*, *the pulsar world*. This is what a presenter would say just before the name: "the rocky world Aqr Quyllur-o". It works the same way as saying "the physicist Marie Curie". The word "physicist" tells you what sort of person is coming next. It is not part of her name, and calling her a chemist instead would not change what she is called.
 
-The distinction is load-bearing, and it is worth showing why.
+This distinction does real work, and it is worth showing why.
 
-Suppose the class were built into the name instead. WASP-12b is currently classified as a hot Jupiter, so call it `Aur Hotgiant-a`. If later measurements reclassified it — the boundary between large planets and small brown dwarfs is genuinely blurry, and objects have crossed it before — the name would become factually wrong. Correcting it means issuing a replacement, which breaks every article, broadcast and citation that used the original.
+Suppose we had built the description into the name instead. WASP-12b is currently classed as a scorching giant planet, so we might have called it `Aur Hotgiant-a`. If later measurements reclassified it — and the line between a very large planet and a very small failed star is genuinely blurry, with objects having crossed it before — the name would now be telling people something untrue. Fixing it would mean issuing a replacement, and every article, broadcast and reference using the old one would be wrong.
 
-Holding the class outside the name makes that revision cost nothing. The name `Aur Yildiz-a` does not move. Only the spoken descriptor changes, from "the hot giant" to "the brown dwarf".
+Keeping the description outside the name makes that correction cost nothing. The name `Aur Yildiz-a` does not move. Only the spoken description changes, from "the scorching giant" to "the failed star".
 
-In database terms: the class tag is a column in the record, not part of the key. It is the mutable half of a design whose other half must never move.
+## 6. Examples
 
-## 6. Worked examples
+These are the actual results from the working version, not hand-picked to look good.
 
-These are the actual outputs of the reference implementation, not hand-picked illustrations.
-
-| Catalogue ID | Constellation | Register name | Core word | Spoken as |
+| Reference code | Constellation | New name | Where the word comes from | Said as |
 |---|---|---|---|---|
 | Kepler-452 b | Cygnus | Cyg Stjarna-a | star, Icelandic | "the super-Earth Cyg Stjarna-a" |
 | TRAPPIST-1 e | Aquarius | Aqr Quyllur-o | star, Quechua | "the rocky world Aqr Quyllur-o" |
 | Proxima Centauri b | Centaurus | Cen Seren-a | star, Welsh | "the nearest world Cen Seren-a" |
 | TOI-700 d | Dorado | Dor Noquisi-i | star, Cherokee | "the rocky world Dor Noquisi-i" |
-| 51 Pegasi b | Pegasus | *Dimidium* | — | existing IAU name honoured |
+| 51 Pegasi b | Pegasus | *Dimidium* | — | already has a name; kept |
 
-The last row matters. Where a name exists, the register records and defers.
+That last row matters as much as the others. Where a name already exists, the list records it and steps aside.
 
-## 7. Governance and contribution
+## 7. Who decides, and how to take part
 
-The register is a public, version-controlled data file. Two contribution paths:
+The list is a public file that anyone can read, copy or correct. There are two ways to contribute.
 
-**Adding a word.** Anyone may propose a word for the pool, with language, meaning, script, a rough pronunciation, and ideally a native-speaker attestation. Words are vetted before entry. This is not optional politeness: a word that means "star" in a dictionary may mean something regrettable in a neighbouring dialect, and only speakers can catch that.
+**Adding a word.** Anyone can suggest a word for the pool, giving the language, the meaning, how it is written and roughly how it is said. Words are checked before they go in. This is not politeness for its own sake: a word that means "star" in a dictionary can mean something unfortunate in a neighbouring dialect, and only people who speak the language will catch that.
 
-**Adding an object.** Anyone may submit a catalogue ID with its constellation. The algorithm issues the name; no human chooses it.
+**Adding an object.** Anyone can submit a reference code and its constellation. The calculation produces the name; no person picks it.
 
-Two rules keep the register honest:
+Two rules keep the list trustworthy:
 
-- **Append-only.** A name, once issued, is never reassigned or withdrawn.
-- **Rotation-fair.** Assignment probes forward through the pool on collision, so no language accumulates a disproportionate share within any constellation.
+- **Names are only ever added, never taken back.** Once given, a name stays given.
+- **No language may dominate.** If the calculation lands on a word already used in that constellation, it moves along to the next free one. Over the whole list this spreads the languages evenly.
 
-The register requires no institutional blessing to be useful. It is a lookup table published under an open licence. If it is good, it will be used.
+None of this needs anyone's permission to be useful. It is a list, published openly, that anyone may use. If it is good, people will use it.
 
-## 8. Known problems
+## 8. What's wrong with it so far
 
-**Pool exhaustion in crowded constellations.** The Kepler field deposited thousands of planets into Cygnus alone. A pool of fifty words will not cover it. The pool must grow to several hundred, which is achievable — there are around seven thousand living languages — and the most crowded constellations may eventually need a compound core (`Cyg Nyota Rangi-a`). Ugly, but only where the density demands it.
+**Some constellations will run out of words.** The Kepler telescope alone dropped thousands of planets into Cygnus. A pool of fifty words will not stretch that far. It needs to grow into the hundreds — which is achievable, since there are roughly seven thousand living languages — and the busiest constellations may eventually need two words rather than one. Clumsy, but only where the crowding demands it.
 
-**The Latin stem.** Discussed under Field 1. Defensible, but a genuine compromise rather than a solved problem.
+**The Latin abbreviations.** Discussed in part five. A reasonable trade, but a trade all the same.
 
-**Vetting throughput.** The vetting requirement in §7 (Governance) is the real bottleneck, and it should be. A register that grows slowly and correctly beats one that grows fast and offends.
+**Checking words takes time.** Getting speakers to confirm each word is the real bottleneck, and it should be. A list that grows slowly and correctly is worth far more than one that grows quickly and offends people.
 
-**Adoption.** The hardest problem, and not a technical one.
+**Getting anyone to use it.** This is the hardest problem and it is not a technical one.
 
-## 9. Adoption path
+## 9. How this could catch on
 
-The full sky is not the target. The target is the set of objects that actually appear in documentaries, news articles and museum captions — perhaps two hundred objects, growing slowly.
+The whole sky is not the target. The target is the handful of objects that actually turn up in documentaries, news stories and museum captions — perhaps a couple of hundred, growing slowly.
 
-1. Name that set properly, with a vetted pool.
-2. Publish the register openly with the generator.
-3. Get one science communicator to use it on air.
+1. Name those properly, with a checked pool of words.
+2. Publish the list openly, along with the tool that produces the names.
+3. Get one person who talks to the public — a presenter, a planetarium, a science journalist — to use it.
 
-A single television producer adopting the register would do more for it than any committee approval. That is the whole strategy.
+One television producer saying these names on air would do more than any committee's approval. That is the entire strategy.
 
 ---
 
-## Appendix A — Algorithm
+## Appendix A — How a name is picked
+
+The reference code is put through a standard calculation that turns text into a number. That number decides which word in the pool to use. If the word is already taken in that constellation, it steps along to the next free one. The result is then written down and never worked out again.
 
 ```
-issue_name(catalogue_id, constellation, planet_letter):
+To name an object:
 
-    if object has an existing proper name:
-        record it and return it
+    If it already has a proper name, record that and stop.
 
-    stem   = iau_abbreviation(constellation)
-    index  = fnv1a(catalogue_id) mod pool_size
+    Take the constellation's three-letter abbreviation.
+    Turn the reference code into a number, and use that
+      number to pick a word from the pool.
+    If that word is already used in that constellation,
+      step to the next word, and keep stepping until one is free.
+    Add the vowel that matches the planet's letter.
 
-    while (stem, pool[index]) already issued in register:
-        index = (index + 1) mod pool_size
-
-    core   = pool[index].word
-    suffix = vowel_map[planet_letter]
-
-    name = stem + " " + core + "-" + suffix
-
-    store name permanently against catalogue_id
-    return name
+    Write the finished name down permanently.
 ```
 
-The hash is computed **once**, at issue. The stored name is the record. It is never recomputed from the catalogue ID, because catalogue IDs can be merged, split or reclassified, and a name that drifts with them is not a name.
+The calculation is run **once**, when the name is first given. The written-down name is what counts from then on. It is never worked out again from the reference code, because reference codes do occasionally get merged, split or reclassified, and a name that quietly changes when that happens is not a name at all.
 
-## Appendix B — Reference implementation
+## Appendix B — What has been built
 
-An implementation accompanies this paper: a register file (`register.json`), a
-command-line tool that issues names into it (`issue.py`), and a page that reads
-and displays it (`skyname.html`). The register currently holds 57 entries drawn
-from 44 languages.
+A working version accompanies this paper: the list itself (`register.json`), a small program that adds names to it (`issue.py`), and a web page that displays it (`index.html`). The list currently holds 57 objects, using words from 44 languages across 27 constellations.
 
-The tool enforces the immutability rule directly. Names are issued once and
-appended; the file is never regenerated from catalogue IDs. A `check` command
-validates the register for duplicate identifiers, unknown constellation codes
-and stem-core collisions.
+The program enforces the "never changed" rule directly. Names are added to the end of the list and the list is never rebuilt from scratch. A checking command looks for duplicates, unknown constellations and clashes.
 
-Correspondence and contributions to the address above.
+The words currently in the pool were gathered from reference sources and **have not yet been confirmed by native speakers**. Every entry has a field recording who vouched for it, and every one of those fields is currently empty. This is the most useful thing anyone reading could help with.
 
-## Appendix C — What this proposal does not do
+Everything is at **github.com/matthewsantley/spoken-register**. Correspondence to the address at the top.
 
-- It does not rename any object in the astronomical literature.
-- It does not require IAU approval, though it would welcome it.
-- It does not attempt to name the two billion objects in Gaia.
-- It does not encode distance, mass, temperature, or any other measured quantity.
-- It does not claim the resulting names are beautiful. It claims they are sayable.
+## Appendix C — What this does not do
+
+- It does not rename anything in the scientific record.
+- It does not need the IAU's approval, though it would be glad of it.
+- It does not try to name the two billion objects in the Gaia catalogue.
+- It does not encode distance, mass, temperature or anything else that gets measured.
+- It does not claim these names are beautiful. It claims they can be said.
