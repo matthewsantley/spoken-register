@@ -1,0 +1,42 @@
+name: Correct a word
+description: You speak the language and the word is wrong.
+title: "Correction: "
+labels: ["word check", "correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Two words in the first version of this pool were simply invented. If
+        this is another one, please say so plainly — it is exactly what this
+        page is for.
+  - type: input
+    id: word
+    attributes:
+      label: The word as it currently appears
+      placeholder: Trakas
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language it claims to be
+      placeholder: Lithuanian
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong with it
+      description: Wrong meaning, wrong spelling, not a word at all, offensive or odd in normal use — whatever applies.
+    validations:
+      required: true
+  - type: input
+    id: better
+    attributes:
+      label: What it should be instead
+      description: Leave blank if the word should simply be removed.
+  - type: input
+    id: credit
+    attributes:
+      label: How would you like to be credited?
+      placeholder: A name, a handle, or "anonymous"
