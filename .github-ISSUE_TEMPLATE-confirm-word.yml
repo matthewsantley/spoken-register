@@ -1,0 +1,43 @@
+name: Confirm a word
+description: You speak the language and the word is right.
+title: "Confirming: "
+labels: ["word check", "confirmed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. None of the words in the pool has been checked by a speaker
+        yet, so this is genuinely useful.
+  - type: input
+    id: word
+    attributes:
+      label: Word
+      placeholder: Seren
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: Welsh
+    validations:
+      required: true
+  - type: dropdown
+    id: meaning
+    attributes:
+      label: It is recorded as meaning
+      options: [star, sky, moon]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything worth noting
+      description: Spelling, diacritics, pronunciation, regional variation, or how it would sound in normal use.
+  - type: input
+    id: credit
+    attributes:
+      label: How would you like to be credited?
+      description: A name, a handle, or "anonymous". This goes in the register next to the word.
+    validations:
+      required: true
