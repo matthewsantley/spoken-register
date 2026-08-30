@@ -1,0 +1,1035 @@
+{
+  "version": "0.1",
+  "updated": "2026-08-30",
+  "author": "Matthew John Santley",
+  "contact": "mattsantley@hotmail.com",
+  "licence": "MIT",
+  "note": "Names are issued once and stored. Never regenerate this file from catalogue IDs; append to it.",
+  "pool": [
+    {
+      "word": "Nyota",
+      "language": "Swahili",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Irawo",
+      "language": "Yoruba",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Bituin",
+      "language": "Tagalog",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Quyllur",
+      "language": "Quechua",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Seren",
+      "language": "Welsh",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Whetu",
+      "language": "Māori",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Tara",
+      "language": "Hindi",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Hoshi",
+      "language": "Japanese",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Byeol",
+      "language": "Korean",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Tahti",
+      "language": "Finnish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Yildiz",
+      "language": "Turkish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Citlali",
+      "language": "Nahuatl",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Ulloriaq",
+      "language": "Inuktitut",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Realta",
+      "language": "Irish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Stjarna",
+      "language": "Icelandic",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Kokeb",
+      "language": "Amharic",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Najm",
+      "language": "Arabic",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Hoku",
+      "language": "Hawaiian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Kanyezi",
+      "language": "Zulu",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Sao",
+      "language": "Vietnamese",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Dao",
+      "language": "Thai",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Bintang",
+      "language": "Malay",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Nasti",
+      "language": "Northern Sami",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Izar",
+      "language": "Basque",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Csillag",
+      "language": "Hungarian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Noquisi",
+      "language": "Cherokee",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Mbyja",
+      "language": "Guarani",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Fetu",
+      "language": "Samoan",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Kalokalo",
+      "language": "Fijian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Xiddig",
+      "language": "Somali",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Setareh",
+      "language": "Persian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Zvezda",
+      "language": "Russian",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Estrela",
+      "language": "Portuguese",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Kintana",
+      "language": "Malagasy",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Nyenyezi",
+      "language": "Chichewa",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Tauraro",
+      "language": "Hausa",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Biddew",
+      "language": "Wolof",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Gwiazda",
+      "language": "Polish",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Fetuu",
+      "language": "Tongan",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Aku",
+      "language": "Greenlandic",
+      "meaning": "star",
+      "vouched_by": null
+    },
+    {
+      "word": "Tsuki",
+      "language": "Japanese",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Marama",
+      "language": "Māori",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Killa",
+      "language": "Quechua",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Mahina",
+      "language": "Hawaiian",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Qamar",
+      "language": "Arabic",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Bulan",
+      "language": "Malay",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Dal",
+      "language": "Korean",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Gealach",
+      "language": "Irish",
+      "meaning": "moon",
+      "vouched_by": null
+    },
+    {
+      "word": "Anga",
+      "language": "Swahili",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Langit",
+      "language": "Tagalog",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Rangi",
+      "language": "Māori",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Sora",
+      "language": "Japanese",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Haneul",
+      "language": "Korean",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Zeru",
+      "language": "Basque",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Awyr",
+      "language": "Welsh",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Speir",
+      "language": "Irish",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Taivas",
+      "language": "Finnish",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Ilhuica",
+      "language": "Nahuatl",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Izulu",
+      "language": "Zulu",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Tenger",
+      "language": "Mongolian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Akash",
+      "language": "Bengali",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Vaanam",
+      "language": "Tamil",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Trakas",
+      "language": "Lithuanian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Nebo",
+      "language": "Russian",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Himinn",
+      "language": "Icelandic",
+      "meaning": "sky",
+      "vouched_by": null
+    },
+    {
+      "word": "Sama",
+      "language": "Arabic",
+      "meaning": "sky",
+      "vouched_by": null
+    }
+  ],
+  "register": [
+    {
+      "id": "Kepler-452 b",
+      "stem": "Cyg",
+      "name": "Cyg Stjarna-a",
+      "core": "Stjarna",
+      "language": "Icelandic",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "super-Earth",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-186 f",
+      "stem": "Cyg",
+      "name": "Cyg Csillag-u",
+      "core": "Csillag",
+      "language": "Hungarian",
+      "meaning": "star",
+      "suffix": "u",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-16 b",
+      "stem": "Cyg",
+      "name": "Cyg Nasti-a",
+      "core": "Nasti",
+      "language": "Northern Sami",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "circumbinary giant",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-22 b",
+      "stem": "Cyg",
+      "name": "Cyg Hoku-a",
+      "core": "Hoku",
+      "language": "Hawaiian",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "temperate world",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-1649 c",
+      "stem": "Cyg",
+      "name": "Cyg Akash-e",
+      "core": "Akash",
+      "language": "Bengali",
+      "meaning": "sky",
+      "suffix": "e",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-11 f",
+      "stem": "Cyg",
+      "name": "Cyg Kokeb-u",
+      "core": "Kokeb",
+      "language": "Amharic",
+      "meaning": "star",
+      "suffix": "u",
+      "class": "low-density world",
+      "existing_name": false
+    },
+    {
+      "id": "KELT-9 b",
+      "stem": "Cyg",
+      "name": "Cyg Marama-a",
+      "core": "Marama",
+      "language": "Māori",
+      "meaning": "moon",
+      "suffix": "a",
+      "class": "ultra-hot giant",
+      "existing_name": false
+    },
+    {
+      "id": "HAT-P-7 b",
+      "stem": "Cyg",
+      "name": "Cyg Bulan-a",
+      "core": "Bulan",
+      "language": "Malay",
+      "meaning": "moon",
+      "suffix": "a",
+      "class": "hot giant",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-62 f",
+      "stem": "Lyr",
+      "name": "Lyr Xiddig-u",
+      "core": "Xiddig",
+      "language": "Somali",
+      "meaning": "star",
+      "suffix": "u",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-442 b",
+      "stem": "Lyr",
+      "name": "Lyr Zvezda-a",
+      "core": "Zvezda",
+      "language": "Russian",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "Kepler-90 i",
+      "stem": "Dra",
+      "name": "Dra Gwiazda-a",
+      "core": "Gwiazda",
+      "language": "Polish",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "hot rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "HD 209458 b",
+      "stem": "Peg",
+      "name": "Peg Kintana-a",
+      "core": "Kintana",
+      "language": "Malagasy",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "evaporating giant",
+      "existing_name": false
+    },
+    {
+      "id": "51 Pegasi b",
+      "stem": "Peg",
+      "name": "Dimidium",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "hot giant",
+      "existing_name": true
+    },
+    {
+      "id": "HR 8799 b",
+      "stem": "Peg",
+      "name": "Peg Dal-a",
+      "core": "Dal",
+      "language": "Korean",
+      "meaning": "moon",
+      "suffix": "a",
+      "class": "imaged giant",
+      "existing_name": false
+    },
+    {
+      "id": "HR 8799 e",
+      "stem": "Peg",
+      "name": "Peg Tahti-o",
+      "core": "Tahti",
+      "language": "Finnish",
+      "meaning": "star",
+      "suffix": "o",
+      "class": "imaged giant",
+      "existing_name": false
+    },
+    {
+      "id": "TRAPPIST-1 d",
+      "stem": "Aqr",
+      "name": "Aqr Dal-i",
+      "core": "Dal",
+      "language": "Korean",
+      "meaning": "moon",
+      "suffix": "i",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "TRAPPIST-1 e",
+      "stem": "Aqr",
+      "name": "Aqr Quyllur-o",
+      "core": "Quyllur",
+      "language": "Quechua",
+      "meaning": "star",
+      "suffix": "o",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "TRAPPIST-1 f",
+      "stem": "Aqr",
+      "name": "Aqr Mbyja-u",
+      "core": "Mbyja",
+      "language": "Guarani",
+      "meaning": "star",
+      "suffix": "u",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "Gliese 876 b",
+      "stem": "Aqr",
+      "name": "Aqr Hoshi-a",
+      "core": "Hoshi",
+      "language": "Japanese",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "giant",
+      "existing_name": false
+    },
+    {
+      "id": "Proxima Centauri b",
+      "stem": "Cen",
+      "name": "Cen Seren-a",
+      "core": "Seren",
+      "language": "Welsh",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "nearest world",
+      "existing_name": false
+    },
+    {
+      "id": "Proxima Centauri d",
+      "stem": "Cen",
+      "name": "Cen Yildiz-i",
+      "core": "Yildiz",
+      "language": "Turkish",
+      "meaning": "star",
+      "suffix": "i",
+      "class": "sub-Earth",
+      "existing_name": false
+    },
+    {
+      "id": "WASP-12 b",
+      "stem": "Aur",
+      "name": "Aur Bituin-a",
+      "core": "Bituin",
+      "language": "Tagalog",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "doomed giant",
+      "existing_name": false
+    },
+    {
+      "id": "WASP-121 b",
+      "stem": "Pup",
+      "name": "Pup Speir-a",
+      "core": "Speir",
+      "language": "Irish",
+      "meaning": "sky",
+      "suffix": "a",
+      "class": "ultra-hot giant",
+      "existing_name": false
+    },
+    {
+      "id": "WASP-76 b",
+      "stem": "Psc",
+      "name": "Psc Byeol-a",
+      "core": "Byeol",
+      "language": "Korean",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "ultra-hot giant",
+      "existing_name": false
+    },
+    {
+      "id": "WASP-33 b",
+      "stem": "And",
+      "name": "And Kokeb-a",
+      "core": "Kokeb",
+      "language": "Amharic",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "hot giant",
+      "existing_name": false
+    },
+    {
+      "id": "WASP-39 b",
+      "stem": "Vir",
+      "name": "Vir Fetu-a",
+      "core": "Fetu",
+      "language": "Samoan",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "puffy giant",
+      "existing_name": false
+    },
+    {
+      "id": "WASP-96 b",
+      "stem": "Phe",
+      "name": "Phe Ulloriaq-a",
+      "core": "Ulloriaq",
+      "language": "Inuktitut",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "hazy giant",
+      "existing_name": false
+    },
+    {
+      "id": "WASP-17 b",
+      "stem": "Sco",
+      "name": "Sco Noquisi-a",
+      "core": "Noquisi",
+      "language": "Cherokee",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "retrograde giant",
+      "existing_name": false
+    },
+    {
+      "id": "K2-18 b",
+      "stem": "Leo",
+      "name": "Leo Nyota-a",
+      "core": "Nyota",
+      "language": "Swahili",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "steam world",
+      "existing_name": false
+    },
+    {
+      "id": "Gliese 436 b",
+      "stem": "Leo",
+      "name": "Leo Bintang-a",
+      "core": "Bintang",
+      "language": "Malay",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "warm Neptune",
+      "existing_name": false
+    },
+    {
+      "id": "TOI-700 d",
+      "stem": "Dor",
+      "name": "Dor Noquisi-i",
+      "core": "Noquisi",
+      "language": "Cherokee",
+      "meaning": "star",
+      "suffix": "i",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "TOI-700 e",
+      "stem": "Dor",
+      "name": "Dor Bituin-o",
+      "core": "Bituin",
+      "language": "Tagalog",
+      "meaning": "star",
+      "suffix": "o",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "LHS 1140 b",
+      "stem": "Cet",
+      "name": "Cet Seren-a",
+      "core": "Seren",
+      "language": "Welsh",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "dense world",
+      "existing_name": false
+    },
+    {
+      "id": "Tau Ceti e",
+      "stem": "Cet",
+      "name": "Cet Citlali-o",
+      "core": "Citlali",
+      "language": "Nahuatl",
+      "meaning": "star",
+      "suffix": "o",
+      "class": "candidate world",
+      "existing_name": false
+    },
+    {
+      "id": "YZ Ceti b",
+      "stem": "Cet",
+      "name": "Cet Bulan-a",
+      "core": "Bulan",
+      "language": "Malay",
+      "meaning": "moon",
+      "suffix": "a",
+      "class": "sub-Earth",
+      "existing_name": false
+    },
+    {
+      "id": "55 Cancri e",
+      "stem": "Cnc",
+      "name": "Janssen",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "lava world",
+      "existing_name": true
+    },
+    {
+      "id": "GJ 1214 b",
+      "stem": "Oph",
+      "name": "Oph Byeol-a",
+      "core": "Byeol",
+      "language": "Korean",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "mini-Neptune",
+      "existing_name": false
+    },
+    {
+      "id": "Wolf 1061 c",
+      "stem": "Oph",
+      "name": "Oph Dal-e",
+      "core": "Dal",
+      "language": "Korean",
+      "meaning": "moon",
+      "suffix": "e",
+      "class": "temperate world",
+      "existing_name": false
+    },
+    {
+      "id": "GJ 357 d",
+      "stem": "Hya",
+      "name": "Hya Sao-i",
+      "core": "Sao",
+      "language": "Vietnamese",
+      "meaning": "star",
+      "suffix": "i",
+      "class": "cold super-Earth",
+      "existing_name": false
+    },
+    {
+      "id": "PSR B1257+12 b",
+      "stem": "Vir",
+      "name": "Draugr",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "pulsar world",
+      "existing_name": true
+    },
+    {
+      "id": "PSR B1257+12 c",
+      "stem": "Vir",
+      "name": "Poltergeist",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "pulsar world",
+      "existing_name": true
+    },
+    {
+      "id": "Ross 128 b",
+      "stem": "Vir",
+      "name": "Vir Bintang-a",
+      "core": "Bintang",
+      "language": "Malay",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "temperate world",
+      "existing_name": false
+    },
+    {
+      "id": "Fomalhaut b",
+      "stem": "PsA",
+      "name": "Dagon",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "debris object",
+      "existing_name": true
+    },
+    {
+      "id": "Epsilon Eridani b",
+      "stem": "Eri",
+      "name": "AEgir",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "cold giant",
+      "existing_name": true
+    },
+    {
+      "id": "LTT 1445 A b",
+      "stem": "Eri",
+      "name": "Eri Anga-a",
+      "core": "Anga",
+      "language": "Swahili",
+      "meaning": "sky",
+      "suffix": "a",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "Upsilon Andromedae b",
+      "stem": "And",
+      "name": "Saffar",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "hot giant",
+      "existing_name": true
+    },
+    {
+      "id": "Mu Arae b",
+      "stem": "Ara",
+      "name": "Quijote",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "giant",
+      "existing_name": true
+    },
+    {
+      "id": "Beta Pictoris b",
+      "stem": "Pic",
+      "name": "Pic Nyenyezi-a",
+      "core": "Nyenyezi",
+      "language": "Chichewa",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "young imaged giant",
+      "existing_name": false
+    },
+    {
+      "id": "HD 40307 g",
+      "stem": "Pic",
+      "name": "Pic Yildiz-ae",
+      "core": "Yildiz",
+      "language": "Turkish",
+      "meaning": "star",
+      "suffix": "ae",
+      "class": "super-Earth",
+      "existing_name": false
+    },
+    {
+      "id": "HD 189733 b",
+      "stem": "Vul",
+      "name": "Vul Tsuki-a",
+      "core": "Tsuki",
+      "language": "Japanese",
+      "meaning": "moon",
+      "suffix": "a",
+      "class": "blue giant",
+      "existing_name": false
+    },
+    {
+      "id": "HD 80606 b",
+      "stem": "UMa",
+      "name": "UMa Xiddig-a",
+      "core": "Xiddig",
+      "language": "Somali",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "eccentric giant",
+      "existing_name": false
+    },
+    {
+      "id": "CoRoT-7 b",
+      "stem": "Mon",
+      "name": "Mon Estrela-a",
+      "core": "Estrela",
+      "language": "Portuguese",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "lava world",
+      "existing_name": false
+    },
+    {
+      "id": "Gliese 667 Cc",
+      "stem": "Sco",
+      "name": "Sco Gwiazda-a",
+      "core": "Gwiazda",
+      "language": "Polish",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "temperate world",
+      "existing_name": false
+    },
+    {
+      "id": "Teegarden's Star b",
+      "stem": "Ari",
+      "name": "Ari Ulloriaq-a",
+      "core": "Ulloriaq",
+      "language": "Inuktitut",
+      "meaning": "star",
+      "suffix": "a",
+      "class": "rocky world",
+      "existing_name": false
+    },
+    {
+      "id": "GJ 273 b",
+      "stem": "CMi",
+      "name": "Luyten b",
+      "core": null,
+      "language": null,
+      "meaning": null,
+      "suffix": null,
+      "class": "temperate world",
+      "existing_name": true
+    },
+    {
+      "id": "OGLE-2005-BLG-390L b",
+      "stem": "Sgr",
+      "name": "Sgr Mahina-a",
+      "core": "Mahina",
+      "language": "Hawaiian",
+      "meaning": "moon",
+      "suffix": "a",
+      "class": "cold super-Earth",
+      "existing_name": false
+    },
+    {
+      "id": "TOI-2109 b",
+      "stem": "Cyg",
+      "name": "Cyg Trakas-a",
+      "core": "Trakas",
+      "language": "Lithuanian",
+      "meaning": "sky",
+      "suffix": "a",
+      "class": "ultra-hot giant",
+      "existing_name": false
+    }
+  ]
+}

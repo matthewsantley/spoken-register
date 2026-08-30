@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Spoken Register — human-readable names for the sky</title>
+<meta name="author" content="Matthew John Santley">
+<meta name="description" content="An open alias table giving stars and exoplanets names a person can say, remember and repeat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#DCE1DF; --card:#F5F6F3; --ink:#14212B; --slate:#5D6C74;
+  --verdigris:#33705E; --ochre:#9A5C17; --plum:#6B4A6E; --rule:#BCC5C2;
+  --display:'Fraunces',Georgia,serif; --body:'Archivo',system-ui,sans-serif; --mono:'IBM Plex Mono',monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+a{color:var(--verdigris)}
+:focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
+
+.masthead{border-bottom:1px solid var(--ink);padding:28px 0 14px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.masthead h1{font-family:var(--display);font-weight:300;font-size:clamp(30px,6vw,46px);line-height:1.02;margin:0;font-variation-settings:'SOFT' 40,'WONK' 1}
+.masthead p{margin:4px 0 0;font-size:14px;color:var(--slate);max-width:44ch}
+.byline{font-family:var(--mono);font-size:11.5px;color:var(--slate);margin:8px 0 0;letter-spacing:.02em}
+.tally{font-family:var(--mono);font-size:12px;color:var(--slate);text-align:right;line-height:1.5;white-space:nowrap}
+.tally b{display:block;font-family:var(--display);font-size:30px;font-weight:500;color:var(--ink)}
+
+.status{font-family:var(--mono);font-size:12px;padding:9px 14px;margin:16px 0 0;border-left:2.5px solid var(--verdigris);background:#E6EBE9;color:#245445}
+.status.warn{border-color:var(--ochre);background:#F1E3CE;color:#734311}
+
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+section{padding:52px 0;border-bottom:1px solid var(--rule)}
+h2{font-family:var(--display);font-weight:300;font-size:clamp(22px,4vw,30px);margin:0 0 6px;font-variation-settings:'SOFT' 40}
+h3{font-family:var(--display);font-weight:500;font-size:18px;margin:0 0 14px}
+.lede{color:var(--slate);margin:0 0 26px;max-width:62ch;font-size:15px}
+
+.controls{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}
+select,input,textarea,button{font-family:var(--body);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:2px;padding:10px 12px}
+select{flex:1;min-width:200px}
+button{cursor:pointer;background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:500;padding:10px 18px}
+button:hover{background:var(--verdigris);border-color:var(--verdigris)}
+button.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+button.ghost:hover{background:var(--ink);color:var(--paper)}
+
+.plate{background:var(--card);border:1px solid var(--ink);padding:34px 28px 26px}
+.plate .cat{font-family:var(--mono);font-size:13px;color:var(--slate);text-decoration:line-through;text-decoration-thickness:1px;margin:0 0 10px}
+.plate .name{font-family:var(--display);font-weight:500;font-size:clamp(34px,8.5vw,62px);line-height:1.05;margin:0;font-variation-settings:'SOFT' 30,'WONK' 1;word-break:break-word}
+.seg{border-bottom:4px solid transparent;padding-bottom:2px}
+.s1{border-color:var(--verdigris)} .s2{border-color:var(--plum)} .s3{border-color:var(--ochre)}
+.tag{font-family:var(--mono);font-size:12px;color:var(--slate);margin:14px 0 0;letter-spacing:.04em}
+.legend{margin:24px 0 0;padding-top:20px;border-top:1px solid var(--rule);display:grid;gap:12px}
+.legend div{display:flex;gap:12px;align-items:baseline;font-size:14px}
+.key{font-family:var(--mono);font-size:12px;font-weight:500;padding:2px 8px;border-radius:2px;flex-shrink:0;min-width:72px;text-align:center}
+.k1{background:#DCEAE4;color:#245445} .k2{background:#E7DFE8;color:#4E3551} .k3{background:#F1E3CE;color:#734311}
+.legend span:last-child{color:var(--slate)}
+.honoured{background:#F1E3CE;color:#734311;font-family:var(--mono);font-size:11px;padding:3px 9px;display:inline-block;margin-bottom:12px;letter-spacing:.08em;text-transform:uppercase}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.field{margin-bottom:14px}
+.field label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin-bottom:5px}
+.field input,.field select{width:100%}
+.err{font-size:13px;color:#8C2B1E;margin:6px 0 0}
+.ok{font-size:14px;color:var(--verdigris);margin:12px 0 0;font-weight:500}
+.snippet{font-family:var(--mono);font-size:12px;background:var(--card);border:1px solid var(--rule);padding:12px;margin:12px 0 0;white-space:pre-wrap;word-break:break-word;display:none;line-height:1.5}
+
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);font-weight:400;padding:0 10px 8px 0;border-bottom:1px solid var(--ink)}
+td{padding:9px 10px 9px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.nm{font-family:var(--display);font-weight:500;font-size:16px;white-space:nowrap}
+td.id{font-family:var(--mono);font-size:12px;color:var(--slate)}
+td.lg{font-family:var(--mono);font-size:12px;color:var(--ochre)}
+.foot{padding:44px 0 70px;font-size:14px;color:var(--slate)}
+.foot h3{font-family:var(--display);font-weight:500;font-size:17px;color:var(--ink);margin:24px 0 6px}
+.foot p{max-width:66ch;margin:0 0 10px}
+.foot code{font-family:var(--mono);font-size:12.5px;background:#E6EAE8;padding:1px 4px}
+@media(max-width:640px){
+  .cols{grid-template-columns:1fr;gap:26px}
+  .hide-sm{display:none}
+  .wrap{padding:0 18px}
+  section{padding:38px 0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div>
+    <h1>The Spoken Register</h1>
+    <p>An open alias table giving stars and exoplanets names a person can say, remember and repeat.</p>
+    <p class="byline">Matthew John Santley · mattsantley@hotmail.com · draft 0.1 · MIT licence</p>
+  </div>
+  <div class="tally"><b id="tally">—</b>names on file<br><span id="tallyLang">—</span> languages in the pool</div>
+</header>
+
+<p class="status" id="status">Loading the register…</p>
+
+<section>
+  <p class="eyebrow">The naming desk</p>
+  <h2>Watch a catalogue number become a word</h2>
+  <p class="lede">Every name here was issued once and written to the register file. Nothing is regenerated when you load this page.</p>
+  <div class="controls">
+    <select id="pick" aria-label="Choose a catalogued object"></select>
+    <button id="roll" class="ghost">Surprise me</button>
+  </div>
+  <div class="plate">
+    <span class="honoured" id="honoured" hidden>Existing name honoured</span>
+    <p class="cat" id="cat">—</p>
+    <p class="name" id="nm">—</p>
+    <p class="tag" id="tag"></p>
+    <div class="legend" id="legend"></div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">Propose</p>
+  <h2>Add to the register</h2>
+  <p class="lede">This page cannot write to the register — nothing typed here is saved. It shows you what the tool would issue, and gives you the line to submit. Names are decided by algorithm, never chosen.</p>
+  <div class="cols">
+    <div>
+      <h3>Preview a name for an object</h3>
+      <div class="field"><label for="oId">Catalogue identifier</label><input id="oId" placeholder="TOI-2109 b"></div>
+      <div class="field"><label for="oCon">Constellation</label><select id="oCon"></select></div>
+      <div class="field"><label for="oCls">Class tag (spoken alongside)</label><input id="oCls" placeholder="ultra-hot giant"></div>
+      <button id="issue">Preview name</button>
+      <p class="err" id="oErr"></p><p class="ok" id="oOk"></p>
+      <pre class="snippet" id="oSnip"></pre>
+    </div>
+    <div>
+      <h3>Propose a word for the pool</h3>
+      <div class="field"><label for="wW">Word</label><input id="wW" placeholder="Tähti"></div>
+      <div class="field"><label for="wL">Language</label><input id="wL" placeholder="Finnish"></div>
+      <div class="field"><label for="wM">Meaning</label><select id="wM"><option>star</option><option>sky</option><option>moon</option></select></div>
+      <button id="addw">Check word</button>
+      <p class="err" id="wErr"></p><p class="ok" id="wOk"></p>
+      <pre class="snippet" id="wSnip"></pre>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">The register</p>
+  <h2>Every name on file</h2>
+  <div class="controls">
+    <input id="q" placeholder="Filter by name, catalogue ID, constellation or language" style="flex:1;min-width:220px" aria-label="Filter the register">
+    <button id="exp" class="ghost">Download register.json</button>
+  </div>
+  <table>
+    <thead><tr><th>Register name</th><th>Catalogue ID</th><th class="hide-sm">Origin</th><th class="hide-sm">Class</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+</section>
+
+<div class="foot">
+  <h3>Where the names actually live</h3>
+  <p>In <code>register.json</code>, alongside this page. That file is the record. This page reads it and displays it; it never recalculates a name that has already been issued. Names are added by running <code>issue.py add "TOI-2109 b" Cyg "ultra-hot giant"</code>, which writes the result to the file once and stops.</p>
+  <h3>Why not just generate them on page load</h3>
+  <p>Because the result would depend on the pool. Insert a word in the middle rather than appending it and every name shifts, silently, everywhere. Hashing decides a name once; after that the file is the authority and the hash is history.</p>
+  <h3>How to contribute</h3>
+  <p>Preview above, then open a pull request adding the line to <code>register.json</code>. Run <code>issue.py check</code> first — it catches duplicate identifiers, unknown constellations and collisions.</p>
+  <h3>On the word pool</h3>
+  <p>Assembled from reference sources and not yet checked by native speakers. Every entry carries a <code>vouched_by</code> field that is currently empty. A word that means star in a dictionary can mean something regrettable in a neighbouring dialect, and only speakers catch that. Treat the pool as unvetted until those fields fill in.</p>
+</div>
+
+</div>
+<script>
+/*SNAPSHOT_START*/
+const SNAPSHOT={"version":"0.1","updated":"2026-08-30","author":"Matthew John Santley","contact":"mattsantley@hotmail.com","licence":"MIT","note":"Names are issued once and stored. Never regenerate this file from catalogue IDs; append to it.","pool":[{"word":"Nyota","language":"Swahili","meaning":"star","vouched_by":null},{"word":"Irawo","language":"Yoruba","meaning":"star","vouched_by":null},{"word":"Bituin","language":"Tagalog","meaning":"star","vouched_by":null},{"word":"Quyllur","language":"Quechua","meaning":"star","vouched_by":null},{"word":"Seren","language":"Welsh","meaning":"star","vouched_by":null},{"word":"Whetu","language":"Māori","meaning":"star","vouched_by":null},{"word":"Tara","language":"Hindi","meaning":"star","vouched_by":null},{"word":"Hoshi","language":"Japanese","meaning":"star","vouched_by":null},{"word":"Byeol","language":"Korean","meaning":"star","vouched_by":null},{"word":"Tahti","language":"Finnish","meaning":"star","vouched_by":null},{"word":"Yildiz","language":"Turkish","meaning":"star","vouched_by":null},{"word":"Citlali","language":"Nahuatl","meaning":"star","vouched_by":null},{"word":"Ulloriaq","language":"Inuktitut","meaning":"star","vouched_by":null},{"word":"Realta","language":"Irish","meaning":"star","vouched_by":null},{"word":"Stjarna","language":"Icelandic","meaning":"star","vouched_by":null},{"word":"Kokeb","language":"Amharic","meaning":"star","vouched_by":null},{"word":"Najm","language":"Arabic","meaning":"star","vouched_by":null},{"word":"Hoku","language":"Hawaiian","meaning":"star","vouched_by":null},{"word":"Kanyezi","language":"Zulu","meaning":"star","vouched_by":null},{"word":"Sao","language":"Vietnamese","meaning":"star","vouched_by":null},{"word":"Dao","language":"Thai","meaning":"star","vouched_by":null},{"word":"Bintang","language":"Malay","meaning":"star","vouched_by":null},{"word":"Nasti","language":"Northern Sami","meaning":"star","vouched_by":null},{"word":"Izar","language":"Basque","meaning":"star","vouched_by":null},{"word":"Csillag","language":"Hungarian","meaning":"star","vouched_by":null},{"word":"Noquisi","language":"Cherokee","meaning":"star","vouched_by":null},{"word":"Mbyja","language":"Guarani","meaning":"star","vouched_by":null},{"word":"Fetu","language":"Samoan","meaning":"star","vouched_by":null},{"word":"Kalokalo","language":"Fijian","meaning":"star","vouched_by":null},{"word":"Xiddig","language":"Somali","meaning":"star","vouched_by":null},{"word":"Setareh","language":"Persian","meaning":"star","vouched_by":null},{"word":"Zvezda","language":"Russian","meaning":"star","vouched_by":null},{"word":"Estrela","language":"Portuguese","meaning":"star","vouched_by":null},{"word":"Kintana","language":"Malagasy","meaning":"star","vouched_by":null},{"word":"Nyenyezi","language":"Chichewa","meaning":"star","vouched_by":null},{"word":"Tauraro","language":"Hausa","meaning":"star","vouched_by":null},{"word":"Biddew","language":"Wolof","meaning":"star","vouched_by":null},{"word":"Gwiazda","language":"Polish","meaning":"star","vouched_by":null},{"word":"Fetuu","language":"Tongan","meaning":"star","vouched_by":null},{"word":"Aku","language":"Greenlandic","meaning":"star","vouched_by":null},{"word":"Tsuki","language":"Japanese","meaning":"moon","vouched_by":null},{"word":"Marama","language":"Māori","meaning":"moon","vouched_by":null},{"word":"Killa","language":"Quechua","meaning":"moon","vouched_by":null},{"word":"Mahina","language":"Hawaiian","meaning":"moon","vouched_by":null},{"word":"Qamar","language":"Arabic","meaning":"moon","vouched_by":null},{"word":"Bulan","language":"Malay","meaning":"moon","vouched_by":null},{"word":"Dal","language":"Korean","meaning":"moon","vouched_by":null},{"word":"Gealach","language":"Irish","meaning":"moon","vouched_by":null},{"word":"Anga","language":"Swahili","meaning":"sky","vouched_by":null},{"word":"Langit","language":"Tagalog","meaning":"sky","vouched_by":null},{"word":"Rangi","language":"Māori","meaning":"sky","vouched_by":null},{"word":"Sora","language":"Japanese","meaning":"sky","vouched_by":null},{"word":"Haneul","language":"Korean","meaning":"sky","vouched_by":null},{"word":"Zeru","language":"Basque","meaning":"sky","vouched_by":null},{"word":"Awyr","language":"Welsh","meaning":"sky","vouched_by":null},{"word":"Speir","language":"Irish","meaning":"sky","vouched_by":null},{"word":"Taivas","language":"Finnish","meaning":"sky","vouched_by":null},{"word":"Ilhuica","language":"Nahuatl","meaning":"sky","vouched_by":null},{"word":"Izulu","language":"Zulu","meaning":"sky","vouched_by":null},{"word":"Tenger","language":"Mongolian","meaning":"sky","vouched_by":null},{"word":"Akash","language":"Bengali","meaning":"sky","vouched_by":null},{"word":"Vaanam","language":"Tamil","meaning":"sky","vouched_by":null},{"word":"Trakas","language":"Lithuanian","meaning":"sky","vouched_by":null},{"word":"Nebo","language":"Russian","meaning":"sky","vouched_by":null},{"word":"Himinn","language":"Icelandic","meaning":"sky","vouched_by":null},{"word":"Sama","language":"Arabic","meaning":"sky","vouched_by":null}],"register":[{"id":"Kepler-452 b","stem":"Cyg","name":"Cyg Stjarna-a","core":"Stjarna","language":"Icelandic","meaning":"star","suffix":"a","class":"super-Earth","existing_name":false},{"id":"Kepler-186 f","stem":"Cyg","name":"Cyg Csillag-u","core":"Csillag","language":"Hungarian","meaning":"star","suffix":"u","class":"rocky world","existing_name":false},{"id":"Kepler-16 b","stem":"Cyg","name":"Cyg Nasti-a","core":"Nasti","language":"Northern Sami","meaning":"star","suffix":"a","class":"circumbinary giant","existing_name":false},{"id":"Kepler-22 b","stem":"Cyg","name":"Cyg Hoku-a","core":"Hoku","language":"Hawaiian","meaning":"star","suffix":"a","class":"temperate world","existing_name":false},{"id":"Kepler-1649 c","stem":"Cyg","name":"Cyg Akash-e","core":"Akash","language":"Bengali","meaning":"sky","suffix":"e","class":"rocky world","existing_name":false},{"id":"Kepler-11 f","stem":"Cyg","name":"Cyg Kokeb-u","core":"Kokeb","language":"Amharic","meaning":"star","suffix":"u","class":"low-density world","existing_name":false},{"id":"KELT-9 b","stem":"Cyg","name":"Cyg Marama-a","core":"Marama","language":"Māori","meaning":"moon","suffix":"a","class":"ultra-hot giant","existing_name":false},{"id":"HAT-P-7 b","stem":"Cyg","name":"Cyg Bulan-a","core":"Bulan","language":"Malay","meaning":"moon","suffix":"a","class":"hot giant","existing_name":false},{"id":"Kepler-62 f","stem":"Lyr","name":"Lyr Xiddig-u","core":"Xiddig","language":"Somali","meaning":"star","suffix":"u","class":"rocky world","existing_name":false},{"id":"Kepler-442 b","stem":"Lyr","name":"Lyr Zvezda-a","core":"Zvezda","language":"Russian","meaning":"star","suffix":"a","class":"rocky world","existing_name":false},{"id":"Kepler-90 i","stem":"Dra","name":"Dra Gwiazda-a","core":"Gwiazda","language":"Polish","meaning":"star","suffix":"a","class":"hot rocky world","existing_name":false},{"id":"HD 209458 b","stem":"Peg","name":"Peg Kintana-a","core":"Kintana","language":"Malagasy","meaning":"star","suffix":"a","class":"evaporating giant","existing_name":false},{"id":"51 Pegasi b","stem":"Peg","name":"Dimidium","core":null,"language":null,"meaning":null,"suffix":null,"class":"hot giant","existing_name":true},{"id":"HR 8799 b","stem":"Peg","name":"Peg Dal-a","core":"Dal","language":"Korean","meaning":"moon","suffix":"a","class":"imaged giant","existing_name":false},{"id":"HR 8799 e","stem":"Peg","name":"Peg Tahti-o","core":"Tahti","language":"Finnish","meaning":"star","suffix":"o","class":"imaged giant","existing_name":false},{"id":"TRAPPIST-1 d","stem":"Aqr","name":"Aqr Dal-i","core":"Dal","language":"Korean","meaning":"moon","suffix":"i","class":"rocky world","existing_name":false},{"id":"TRAPPIST-1 e","stem":"Aqr","name":"Aqr Quyllur-o","core":"Quyllur","language":"Quechua","meaning":"star","suffix":"o","class":"rocky world","existing_name":false},{"id":"TRAPPIST-1 f","stem":"Aqr","name":"Aqr Mbyja-u","core":"Mbyja","language":"Guarani","meaning":"star","suffix":"u","class":"rocky world","existing_name":false},{"id":"Gliese 876 b","stem":"Aqr","name":"Aqr Hoshi-a","core":"Hoshi","language":"Japanese","meaning":"star","suffix":"a","class":"giant","existing_name":false},{"id":"Proxima Centauri b","stem":"Cen","name":"Cen Seren-a","core":"Seren","language":"Welsh","meaning":"star","suffix":"a","class":"nearest world","existing_name":false},{"id":"Proxima Centauri d","stem":"Cen","name":"Cen Yildiz-i","core":"Yildiz","language":"Turkish","meaning":"star","suffix":"i","class":"sub-Earth","existing_name":false},{"id":"WASP-12 b","stem":"Aur","name":"Aur Bituin-a","core":"Bituin","language":"Tagalog","meaning":"star","suffix":"a","class":"doomed giant","existing_name":false},{"id":"WASP-121 b","stem":"Pup","name":"Pup Speir-a","core":"Speir","language":"Irish","meaning":"sky","suffix":"a","class":"ultra-hot giant","existing_name":false},{"id":"WASP-76 b","stem":"Psc","name":"Psc Byeol-a","core":"Byeol","language":"Korean","meaning":"star","suffix":"a","class":"ultra-hot giant","existing_name":false},{"id":"WASP-33 b","stem":"And","name":"And Kokeb-a","core":"Kokeb","language":"Amharic","meaning":"star","suffix":"a","class":"hot giant","existing_name":false},{"id":"WASP-39 b","stem":"Vir","name":"Vir Fetu-a","core":"Fetu","language":"Samoan","meaning":"star","suffix":"a","class":"puffy giant","existing_name":false},{"id":"WASP-96 b","stem":"Phe","name":"Phe Ulloriaq-a","core":"Ulloriaq","language":"Inuktitut","meaning":"star","suffix":"a","class":"hazy giant","existing_name":false},{"id":"WASP-17 b","stem":"Sco","name":"Sco Noquisi-a","core":"Noquisi","language":"Cherokee","meaning":"star","suffix":"a","class":"retrograde giant","existing_name":false},{"id":"K2-18 b","stem":"Leo","name":"Leo Nyota-a","core":"Nyota","language":"Swahili","meaning":"star","suffix":"a","class":"steam world","existing_name":false},{"id":"Gliese 436 b","stem":"Leo","name":"Leo Bintang-a","core":"Bintang","language":"Malay","meaning":"star","suffix":"a","class":"warm Neptune","existing_name":false},{"id":"TOI-700 d","stem":"Dor","name":"Dor Noquisi-i","core":"Noquisi","language":"Cherokee","meaning":"star","suffix":"i","class":"rocky world","existing_name":false},{"id":"TOI-700 e","stem":"Dor","name":"Dor Bituin-o","core":"Bituin","language":"Tagalog","meaning":"star","suffix":"o","class":"rocky world","existing_name":false},{"id":"LHS 1140 b","stem":"Cet","name":"Cet Seren-a","core":"Seren","language":"Welsh","meaning":"star","suffix":"a","class":"dense world","existing_name":false},{"id":"Tau Ceti e","stem":"Cet","name":"Cet Citlali-o","core":"Citlali","language":"Nahuatl","meaning":"star","suffix":"o","class":"candidate world","existing_name":false},{"id":"YZ Ceti b","stem":"Cet","name":"Cet Bulan-a","core":"Bulan","language":"Malay","meaning":"moon","suffix":"a","class":"sub-Earth","existing_name":false},{"id":"55 Cancri e","stem":"Cnc","name":"Janssen","core":null,"language":null,"meaning":null,"suffix":null,"class":"lava world","existing_name":true},{"id":"GJ 1214 b","stem":"Oph","name":"Oph Byeol-a","core":"Byeol","language":"Korean","meaning":"star","suffix":"a","class":"mini-Neptune","existing_name":false},{"id":"Wolf 1061 c","stem":"Oph","name":"Oph Dal-e","core":"Dal","language":"Korean","meaning":"moon","suffix":"e","class":"temperate world","existing_name":false},{"id":"GJ 357 d","stem":"Hya","name":"Hya Sao-i","core":"Sao","language":"Vietnamese","meaning":"star","suffix":"i","class":"cold super-Earth","existing_name":false},{"id":"PSR B1257+12 b","stem":"Vir","name":"Draugr","core":null,"language":null,"meaning":null,"suffix":null,"class":"pulsar world","existing_name":true},{"id":"PSR B1257+12 c","stem":"Vir","name":"Poltergeist","core":null,"language":null,"meaning":null,"suffix":null,"class":"pulsar world","existing_name":true},{"id":"Ross 128 b","stem":"Vir","name":"Vir Bintang-a","core":"Bintang","language":"Malay","meaning":"star","suffix":"a","class":"temperate world","existing_name":false},{"id":"Fomalhaut b","stem":"PsA","name":"Dagon","core":null,"language":null,"meaning":null,"suffix":null,"class":"debris object","existing_name":true},{"id":"Epsilon Eridani b","stem":"Eri","name":"AEgir","core":null,"language":null,"meaning":null,"suffix":null,"class":"cold giant","existing_name":true},{"id":"LTT 1445 A b","stem":"Eri","name":"Eri Anga-a","core":"Anga","language":"Swahili","meaning":"sky","suffix":"a","class":"rocky world","existing_name":false},{"id":"Upsilon Andromedae b","stem":"And","name":"Saffar","core":null,"language":null,"meaning":null,"suffix":null,"class":"hot giant","existing_name":true},{"id":"Mu Arae b","stem":"Ara","name":"Quijote","core":null,"language":null,"meaning":null,"suffix":null,"class":"giant","existing_name":true},{"id":"Beta Pictoris b","stem":"Pic","name":"Pic Nyenyezi-a","core":"Nyenyezi","language":"Chichewa","meaning":"star","suffix":"a","class":"young imaged giant","existing_name":false},{"id":"HD 40307 g","stem":"Pic","name":"Pic Yildiz-ae","core":"Yildiz","language":"Turkish","meaning":"star","suffix":"ae","class":"super-Earth","existing_name":false},{"id":"HD 189733 b","stem":"Vul","name":"Vul Tsuki-a","core":"Tsuki","language":"Japanese","meaning":"moon","suffix":"a","class":"blue giant","existing_name":false},{"id":"HD 80606 b","stem":"UMa","name":"UMa Xiddig-a","core":"Xiddig","language":"Somali","meaning":"star","suffix":"a","class":"eccentric giant","existing_name":false},{"id":"CoRoT-7 b","stem":"Mon","name":"Mon Estrela-a","core":"Estrela","language":"Portuguese","meaning":"star","suffix":"a","class":"lava world","existing_name":false},{"id":"Gliese 667 Cc","stem":"Sco","name":"Sco Gwiazda-a","core":"Gwiazda","language":"Polish","meaning":"star","suffix":"a","class":"temperate world","existing_name":false},{"id":"Teegarden's Star b","stem":"Ari","name":"Ari Ulloriaq-a","core":"Ulloriaq","language":"Inuktitut","meaning":"star","suffix":"a","class":"rocky world","existing_name":false},{"id":"GJ 273 b","stem":"CMi","name":"Luyten b","core":null,"language":null,"meaning":null,"suffix":null,"class":"temperate world","existing_name":true},{"id":"OGLE-2005-BLG-390L b","stem":"Sgr","name":"Sgr Mahina-a","core":"Mahina","language":"Hawaiian","meaning":"moon","suffix":"a","class":"cold super-Earth","existing_name":false},{"id":"TOI-2109 b","stem":"Cyg","name":"Cyg Trakas-a","core":"Trakas","language":"Lithuanian","meaning":"sky","suffix":"a","class":"ultra-hot giant","existing_name":false}]};
+/*SNAPSHOT_END*/
+const VOWEL={b:"a",c:"e",d:"i",e:"o",f:"u",g:"ae",h:"ea"};
+const CON=[["And","Andromeda"],["Ant","Antlia"],["Aps","Apus"],["Aqr","Aquarius"],["Aql","Aquila"],["Ara","Ara"],["Ari","Aries"],["Aur","Auriga"],["Boo","Boötes"],["Cae","Caelum"],["Cam","Camelopardalis"],["Cnc","Cancer"],["CVn","Canes Venatici"],["CMa","Canis Major"],["CMi","Canis Minor"],["Cap","Capricornus"],["Car","Carina"],["Cas","Cassiopeia"],["Cen","Centaurus"],["Cep","Cepheus"],["Cet","Cetus"],["Cha","Chamaeleon"],["Cir","Circinus"],["Col","Columba"],["Com","Coma Berenices"],["CrA","Corona Australis"],["CrB","Corona Borealis"],["Crv","Corvus"],["Crt","Crater"],["Cru","Crux"],["Cyg","Cygnus"],["Del","Delphinus"],["Dor","Dorado"],["Dra","Draco"],["Equ","Equuleus"],["Eri","Eridanus"],["For","Fornax"],["Gem","Gemini"],["Gru","Grus"],["Her","Hercules"],["Hor","Horologium"],["Hya","Hydra"],["Hyi","Hydrus"],["Ind","Indus"],["Lac","Lacerta"],["Leo","Leo"],["LMi","Leo Minor"],["Lep","Lepus"],["Lib","Libra"],["Lup","Lupus"],["Lyn","Lynx"],["Lyr","Lyra"],["Men","Mensa"],["Mic","Microscopium"],["Mon","Monoceros"],["Mus","Musca"],["Nor","Norma"],["Oct","Octans"],["Oph","Ophiuchus"],["Ori","Orion"],["Pav","Pavo"],["Peg","Pegasus"],["Per","Perseus"],["Phe","Phoenix"],["Pic","Pictor"],["Psc","Pisces"],["PsA","Piscis Austrinus"],["Pup","Puppis"],["Pyx","Pyxis"],["Ret","Reticulum"],["Sge","Sagitta"],["Sgr","Sagittarius"],["Sco","Scorpius"],["Scl","Sculptor"],["Sct","Scutum"],["Ser","Serpens"],["Sex","Sextans"],["Tau","Taurus"],["Tel","Telescopium"],["Tri","Triangulum"],["TrA","Triangulum Australe"],["Tuc","Tucana"],["UMa","Ursa Major"],["UMi","Ursa Minor"],["Vel","Vela"],["Vir","Virgo"],["Vol","Volans"],["Vul","Vulpecula"]];
+const CONMAP=Object.fromEntries(CON);
+const $=id=>document.getElementById(id);
+let DATA=null;
+
+function fnv(s){let x=2166136261;for(let i=0;i<s.length;i++){x^=s.charCodeAt(i);x=Math.imul(x,16777619)}return x>>>0}
+function letter(id){const t=id.trim().replace(/-/g," ").split(/\s+/).pop();return(t.length===1&&/[a-z]/i.test(t))?t.toLowerCase():"b"}
+
+function preview(id,stem){
+  const taken=new Set(DATA.register.filter(e=>e.core).map(e=>e.stem+"|"+e.core));
+  let i=fnv(id)%DATA.pool.length;
+  for(let n=0;n<DATA.pool.length;n++){if(!taken.has(stem+"|"+DATA.pool[i].word))break;i=(i+1)%DATA.pool.length}
+  const p=DATA.pool[i],suf=VOWEL[letter(id)]||"a";
+  return {word:p,name:stem+" "+p.word+"-"+suf,suffix:suf};
+}
+
+function show(i){
+  const r=DATA.register[i];$("pick").value=i;
+  $("cat").textContent=r.id;
+  $("tag").textContent=r.class?"spoken as: the "+r.class:"";
+  $("honoured").hidden=!r.existing_name;
+  const lg=$("legend");
+  if(r.existing_name){
+    $("nm").textContent=r.name;
+    lg.innerHTML='<div><span class="key k3">existing</span><span>Already carries a proper name. The register records it and issues nothing.</span></div>';
+    return;
+  }
+  $("nm").innerHTML='<span class="seg s1">'+r.stem+'</span> <span class="seg s2">'+r.core+'</span>-<span class="seg s3">'+r.suffix+'</span>';
+  lg.innerHTML='<div><span class="key k1">'+r.stem+'</span><span>in '+(CONMAP[r.stem]||r.stem)+'</span></div>'+
+    '<div><span class="key k2">'+r.core+'</span><span>'+r.meaning+' in '+r.language+'</span></div>'+
+    '<div><span class="key k3">-'+r.suffix+'</span><span>planet '+letter(r.id)+' of the system</span></div>';
+}
+
+function rows(){
+  const q=$("q").value.toLowerCase();
+  $("rows").innerHTML=DATA.register.filter(r=>!q||(r.name+" "+r.id+" "+(CONMAP[r.stem]||"")+" "+(r.language||"")).toLowerCase().includes(q))
+    .map(r=>'<tr><td class="nm">'+r.name+'</td><td class="id">'+r.id+'</td><td class="lg hide-sm">'+(r.language?r.meaning+", "+r.language:"proper name")+'</td><td class="hide-sm" style="color:var(--slate)">'+(r.class||"")+'</td></tr>').join("");
+}
+
+function boot(source){
+  $("tally").textContent=DATA.register.length;
+  $("tallyLang").textContent=new Set(DATA.pool.map(p=>p.language)).size;
+  const s=$("status");
+  if(source==="file"){s.textContent="Reading register.json · version "+DATA.version+" · updated "+(DATA.updated||"unknown");}
+  else{s.className="status warn";s.textContent="register.json not reachable — showing the built-in snapshot. Serve this folder over http (python3 -m http.server) to read the live file.";}
+  const sel=$("pick");sel.innerHTML="";
+  DATA.register.forEach((r,i)=>{const o=document.createElement("option");o.value=i;o.textContent=r.id;sel.appendChild(o)});
+  const cs=$("oCon");CON.forEach(c=>{const o=document.createElement("option");o.value=c[0];o.textContent=c[1]+" ("+c[0]+")";cs.appendChild(o)});
+  cs.value="Cyg";
+  rows();show(0);
+
+  sel.addEventListener("change",e=>show(+e.target.value));
+  $("roll").addEventListener("click",()=>show(Math.floor(Math.random()*DATA.register.length)));
+  $("q").addEventListener("input",rows);
+
+  $("issue").addEventListener("click",()=>{
+    const id=$("oId").value.trim(),stem=$("oCon").value,cls=$("oCls").value.trim();
+    $("oOk").textContent="";$("oSnip").style.display="none";
+    if(!id){$("oErr").textContent="Enter a catalogue identifier first";return}
+    if(DATA.register.some(r=>r.id.toLowerCase()===id.toLowerCase())){$("oErr").textContent="Already on file as "+DATA.register.find(r=>r.id.toLowerCase()===id.toLowerCase()).name;return}
+    $("oErr").textContent="";
+    const p=preview(id,stem);
+    $("oOk").textContent="Would be issued as "+p.name;
+    $("oSnip").textContent='issue.py add "'+id+'" '+stem+' "'+cls+'"\n\n'+JSON.stringify({id:id,stem:stem,name:p.name,core:p.word.word,language:p.word.language,meaning:p.word.meaning,suffix:p.suffix,class:cls,existing_name:false},null,2);
+    $("oSnip").style.display="block";
+  });
+  $("oId").addEventListener("input",()=>{$("oErr").textContent="";});
+
+  $("addw").addEventListener("click",()=>{
+    const w=$("wW").value.trim(),l=$("wL").value.trim(),m=$("wM").value;
+    $("wOk").textContent="";$("wSnip").style.display="none";
+    if(!w||!l){$("wErr").textContent="Both a word and a language are needed";return}
+    if(DATA.pool.some(p=>p.word.toLowerCase()===w.toLowerCase())){$("wErr").textContent="Already in the pool";return}
+    $("wErr").textContent="";
+    $("wOk").textContent="Clear to propose — append to the pool, then find a speaker to vouch";
+    $("wSnip").textContent='issue.py word "'+w+'" "'+l+'" '+m+'\n\n'+JSON.stringify({word:w,language:l,meaning:m,vouched_by:null},null,2);
+    $("wSnip").style.display="block";
+  });
+  $("wW").addEventListener("input",()=>{$("wErr").textContent="";});
+
+  $("exp").addEventListener("click",()=>{
+    const b=new Blob([JSON.stringify(DATA,null,2)],{type:"application/json"});
+    const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="register.json";a.click();
+  });
+}
+
+fetch("register.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw 0;return r.json()})
+  .then(d=>{DATA=d;boot("file")})
+  .catch(()=>{
+    if(SNAPSHOT){DATA=SNAPSHOT;boot("snapshot")}
+    else{$("status").className="status warn";$("status").textContent="register.json could not be loaded and no snapshot is embedded. Run issue.py sync, or serve this folder over http.";}
+  });
+</script>
+</body>
+</html>
