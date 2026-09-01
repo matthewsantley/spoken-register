@@ -11,13 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Archivo:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#DCE1DF; --card:#F5F6F3; --ink:#14212B; --slate:#5D6C74;
+  --paper:#DCE1DF; --card:#F5F6F3; --ink:#14212B; --slate:#4F5D66;
   --verdigris:#33705E; --ochre:#9A5C17; --plum:#6B4A6E; --rule:#BCC5C2;
   --display:'Fraunces',Georgia,serif; --body:'Archivo',system-ui,sans-serif; --mono:'IBM Plex Mono',monospace;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
 .wrap{max-width:880px;margin:0 auto;padding:0 24px}
 a{color:var(--verdigris)}
 :focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
@@ -30,21 +30,21 @@ a{color:var(--verdigris)}
 .hero{padding:30px 0 0}
 .plate{background:var(--card);border:1px solid var(--ink);padding:32px 28px 26px}
 .plate .catlabel{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin:0 0 6px}
-.plate .cat{font-family:var(--mono);font-size:clamp(17px,3.6vw,21px);font-weight:500;color:var(--ink);margin:0;word-break:break-word}
-.plate .keeps{font-size:12.5px;color:var(--slate);margin:6px 0 0}
+.plate .cat{font-family:var(--mono);font-size:clamp(18px,3.8vw,22px);font-weight:500;color:var(--ink);margin:0;word-break:break-word}
+.plate .keeps{font-size:13.5px;color:var(--slate);margin:6px 0 0}
 .plate .divide{display:flex;align-items:center;gap:12px;margin:20px 0 16px}
 .plate .divide span{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);white-space:nowrap}
 .plate .divide i{flex:1;height:1px;background:var(--rule)}
 .plate .name{font-family:var(--display);font-weight:500;font-size:clamp(36px,9vw,66px);line-height:1.04;margin:0;font-variation-settings:'SOFT' 30,'WONK' 1;word-break:break-word}
 .seg{border-bottom:4px solid transparent;padding-bottom:2px}
 .s1{border-color:var(--verdigris)} .s2{border-color:var(--plum)} .s3{border-color:var(--ochre)}
-.tag{font-family:var(--mono);font-size:12px;color:var(--slate);margin:14px 0 0;letter-spacing:.04em}
+.tag{font-family:var(--mono);font-size:13px;color:var(--slate);margin:14px 0 0;letter-spacing:.04em}
 .legend{margin:24px 0 0;padding-top:20px;border-top:1px solid var(--rule);display:grid;gap:11px}
-.legend div{display:flex;gap:12px;align-items:baseline;font-size:14px}
-.key{font-family:var(--mono);font-size:12px;font-weight:500;padding:2px 8px;border-radius:2px;flex-shrink:0;min-width:74px;text-align:center}
+.legend div{display:flex;gap:12px;align-items:baseline;font-size:15.5px}
+.key{font-family:var(--mono);font-size:13px;font-weight:500;padding:3px 9px;border-radius:2px;flex-shrink:0;min-width:74px;text-align:center}
 .k1{background:#DCEAE4;color:#245445} .k2{background:#E7DFE8;color:#4E3551} .k3{background:#F1E3CE;color:#734311}
 .legend span:last-child{color:var(--slate)}
-.vowelnote{grid-column:1/-1;margin:6px 0 0;font-size:13px;line-height:1.55;color:var(--slate);border-top:1px solid var(--rule);padding-top:12px}
+.vowelnote{grid-column:1/-1;margin:6px 0 0;font-size:14px;line-height:1.6;color:var(--slate);border-top:1px solid var(--rule);padding-top:12px}
 .vowelnote b{font-family:var(--mono);font-weight:500;color:var(--ink);font-size:12.5px}
 .honoured{background:#F1E3CE;color:#734311;font-family:var(--mono);font-size:11px;padding:3px 9px;display:inline-block;margin-bottom:12px;letter-spacing:.08em;text-transform:uppercase}
 .controls{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
@@ -63,13 +63,13 @@ h2{font-family:var(--display);font-weight:300;font-size:clamp(23px,4.2vw,32px);m
 .numbers{display:flex;gap:38px;flex-wrap:wrap;margin:26px 0 0}
 .numbers div b{display:block;font-family:var(--display);font-weight:500;font-size:34px;line-height:1}
 .numbers div span{font-family:var(--mono);font-size:11.5px;color:var(--slate);letter-spacing:.06em;text-transform:uppercase}
-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:18px}
+table{width:100%;border-collapse:collapse;font-size:15px;margin-top:18px}
 th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);font-weight:400;padding:0 10px 8px 0;border-bottom:1px solid var(--ink)}
 td{padding:9px 10px 9px 0;border-bottom:1px solid var(--rule);vertical-align:top}
 td.nm{font-family:var(--display);font-weight:500;font-size:16px;white-space:nowrap}
-td.id{font-family:var(--mono);font-size:12px;color:var(--slate)}
-td.lg{font-family:var(--mono);font-size:12px;color:var(--ochre)}
-td.con{font-family:var(--mono);font-size:12px;color:var(--verdigris);white-space:nowrap}
+td.id{font-family:var(--mono);font-size:13px;color:var(--slate)}
+td.lg{font-family:var(--mono);font-size:13px;color:var(--ochre)}
+td.con{font-family:var(--mono);font-size:13px;color:var(--verdigris);white-space:nowrap}
 tr.grp td{font-family:var(--display);font-weight:500;font-size:15px;padding:18px 0 5px;border-bottom:1px solid var(--ink);color:var(--ink)}
 .sortbtn{background:none;border:0;padding:0;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);cursor:pointer;font-weight:400}
 .sortbtn:hover{color:var(--ink);background:none}
@@ -78,8 +78,8 @@ tr.grp td{font-family:var(--display);font-weight:500;font-size:15px;padding:18px
 .cards a{display:block;background:var(--card);border:1px solid var(--rule);padding:18px;text-decoration:none;color:var(--ink)}
 .cards a:hover{border-color:var(--ink)}
 .cards b{display:block;font-family:var(--display);font-weight:500;font-size:17px;margin-bottom:4px}
-.cards span{font-size:13.5px;color:var(--slate);line-height:1.5}
-footer{padding:40px 0 70px;margin-top:54px;border-top:1px solid var(--ink);font-size:13.5px;color:var(--slate)}
+.cards span{font-size:14.5px;color:var(--slate);line-height:1.55}
+footer{padding:40px 0 70px;margin-top:54px;border-top:1px solid var(--ink);font-size:14.5px;color:var(--slate)}
 footer p{max-width:64ch;margin:0 0 10px}
 @media(max-width:700px){.cards{grid-template-columns:1fr}.hide-sm{display:none}.wrap{padding:0 18px}}
 </style>
