@@ -234,7 +234,9 @@ function boot(){
     if(SORT===b.dataset.k){DIR=-DIR}else{SORT=b.dataset.k;DIR=1}
     rows();
   }));
-  rows();show(0);
+  const OPENING="HD 97658 b";   // the default example: an opaque catalogue code, a name that carries
+  const start=DATA.register.findIndex(r=>r.id===OPENING);
+  rows();show(start>=0?start:0);
 }
 fetch("register.json",{cache:"no-store"})
   .then(r=>{if(!r.ok)throw 0;return r.json()})
