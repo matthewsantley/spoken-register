@@ -215,7 +215,13 @@ A working version accompanies this paper: the list itself (`register.json`), a s
 
 The program enforces the "never changed" rule directly. Names are added to the end of the list and the list is never rebuilt from scratch. A checking command looks for duplicates, unknown constellations and clashes.
 
-The words currently in the pool were gathered from reference sources and **have not yet been confirmed by native speakers**. Every entry has a field recording who vouched for it, and every one of those fields is currently empty. This is the most useful thing anyone reading could help with.
+The pool was assembled with AI assistance and is being checked against published reference sources. 177 of the 229 words have so far been found in those sources — 147 confirmed outright and 30 recorded as valid variant forms — and four were corrected where sources disagreed. The remaining 52 are marked as not yet looked up, and there is a pattern in which ones they are.
+
+They include Cherokee, Cree, Ojibwe, Lakota, Mapudungun, Yucatec Maya, Rapa Nui, Marshallese, Tahitian, Tetum, Manx, Cornish, Kikuyu, Luganda, Fula, Oromo, Tigrinya, Tamazight and Wolof. Almost every one is an indigenous, minority or endangered language. General reference tables cover the languages of large states and stop; the languages this project most wants to represent properly are precisely the ones no dictionary check will reach.
+
+That is worth stating plainly rather than burying. The words most likely to be wrong belong to the communities the scheme is trying hardest to include, and no amount of further cross-referencing closes that gap. Only speakers can. Every word carries its own status.
+
+That is a different thing from a speaker confirming it, and the register keeps the two apart. A reference source catches a word that is misspelled or does not exist. It does not catch a word that is correct in a dictionary and wrong in a mouth: archaic, childish, or carrying a meaning in one region that it does not carry in another. Every entry therefore also has a field recording which speaker vouched for it, and those are all currently empty.
 
 Everything is at **github.com/matthewsantley/spoken-register**. Correspondence to the address at the top.
 

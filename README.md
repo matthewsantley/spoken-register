@@ -19,6 +19,7 @@ object sits in, with its distinctive part drawn from a pool of words meaning
 | `issue.py` | The tool that issues names and writes them to the register. |
 | `expand.py` | One-off batch loader. Derives constellations from coordinates via astropy. |
 | `audit.py` | Checks every entry's constellation against the sky. `--fix` corrects them. |
+| `verify.py` | Records which pool words were found in published reference sources. |
 | `index.html` | The public page. Reads `register.json` and displays it. |
 | `contribute.html` | Contributor page: proposal previews and how assignment works. |
 | `words.html` | The word pool by language, with a route to confirm or correct each entry. |
@@ -64,9 +65,17 @@ silently. Names are issued once and appended, never recomputed.
 ./issue.py vouch "Tähti" "name of the speaker who confirmed it"
 ```
 
-Every word carries a `vouched_by` field. **All 229 of them are currently empty.**
+Every word carries two independent fields.
 
-This is not a formality. Two entries found while assembling the pool were simply invented — one claimed to be Lithuanian for "sky", one Greenlandic for "star". Neither is a real word. Both were caught by accident, which is not a reliable method. The
+`checked` records whether the word was found in published reference sources —
+177 of 229 so far — 147 confirmed, 30 valid variants — with four corrected where sources disagreed. Run
+`./verify.py` to see the breakdown.
+
+`vouched_by` records a speaker who confirmed it. All 229 are currently empty.
+
+The two are deliberately separate. A dictionary catches a misspelling or an
+invention. Only a speaker catches a word that is correct on paper and wrong in
+use. The
 pool was assembled from reference sources and has not been checked by native
 speakers. A word that means "star" in a dictionary can mean something
 regrettable in a neighbouring dialect, and only speakers catch that. Treat the

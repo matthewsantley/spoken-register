@@ -44,6 +44,9 @@ button.on{background:var(--ink);color:var(--paper)}
 .m{font-size:14px;color:var(--slate);min-width:52px}
 .status{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:2px;background:#EDE7DC;color:#7A5A24}
 .status.ok{background:#DCEAE4;color:#245445}
+.status.src{background:#E4E9EC;color:#33505F}
+.status.src.var{background:#EDE7DC;color:#7A5A24}
+.status.src.none{background:none;color:var(--slate);border:1px solid var(--rule)}
 .act{margin-left:auto;display:flex;gap:8px}
 .act a{font-family:var(--mono);font-size:11.5px;text-decoration:none;border:1px solid var(--rule);padding:3px 9px;color:var(--slate)}
 .act a:hover{border-color:var(--ink);color:var(--ink)}
@@ -67,16 +70,17 @@ footer{padding:38px 0 70px;margin-top:44px;border-top:1px solid var(--ink);font-
 <p class="standfirst">Every word in the pool, grouped by the language it is supposed to come from.</p>
 
 <div class="ask">
-  <h2>What I am actually asking for</h2>
-  <p>I do not speak most of these languages. The words were gathered from reference sources, and <strong>none of them has been confirmed by a speaker</strong>.</p>
-  <p>That is not a theoretical worry. While assembling this pool I found two entries that were simply invented &mdash; one recorded as Lithuanian for &ldquo;sky&rdquo;, one as Greenlandic for &ldquo;star&rdquo;. Neither is a real word. Both are gone now, but they were only caught by accident, and there is no reason to assume they were the only two.</p>
-  <p>So if you speak one of these languages: is the word right? Does it mean what it says? Would it sound odd, or worse, to someone who speaks it? <strong>Even one confirmed word is a real contribution.</strong> It takes about a minute.</p>
-  <p style="font-size:14px;color:var(--slate)">Two ways to tell me, whichever suits. <strong>This is right</strong> and <strong>This is wrong</strong> open a pre-filled email &mdash; no account needed. The small <strong>gh</strong> links open a GitHub issue instead, which makes your answer public so nobody has to check the same word twice. <a href="https://github.com/matthewsantley/spoken-register/issues/new?template=add-language.yml">Your language missing entirely?</a></p>
+  <h2>Where these words come from</h2>
+  <p>Each word is the ordinary noun for &ldquo;star&rdquo;, &ldquo;sky&rdquo; or &ldquo;moon&rdquo; in the language shown. The pool was assembled with AI assistance and has been checked against published reference sources: 177 of the 229 are in those sources, four were corrected where sources disagreed, and 52 are still to be looked up. Where a source offers a related form &mdash; a base form against a definite form, a formal word against an everyday one &mdash; the row is marked <em>variant form</em> and carries the reason.</p>
+  <p>Reference sources catch a word that is misspelled or does not exist. <strong>They do not catch a word that is correct in a dictionary and wrong in a mouth</strong> &mdash; one that sounds archaic, or childish, or means something else entirely in the next valley. Only a speaker catches that, which is why the two columns are kept separate.</p>
+  <p>There is a pattern in the 52 not yet looked up: Cherokee, Cree, Ojibwe, Lakota, Mapudungun, Rapa Nui, Marshallese, Manx, Cornish, Kikuyu, Fula, Oromo, Tigrinya, Tamazight, Wolof. Almost all indigenous, minority or endangered. Reference tables cover the languages of large states and stop &mdash; so the words most likely to be wrong belong to the communities this is trying hardest to represent properly.</p>
+  <p>If you speak one of these languages and something here is off, the buttons on each row will tell me. It takes about a minute, and it is the only way the second column ever fills in.</p>
 </div>
 
 <div class="tallies">
   <div><b id="tWords">&mdash;</b><span>words in the pool</span></div>
   <div><b id="tLangs">&mdash;</b><span>languages</span></div>
+  <div><b id="tChecked">&mdash;</b><span>found in reference sources</span></div>
   <div><b id="tVouched">&mdash;</b><span>confirmed by a speaker</span></div>
 </div>
 
@@ -138,8 +142,11 @@ function render(){
         '<span class="w">'+w.word+'</span>'+
         '<span class="m">'+w.meaning+'</span>'+
         (w.vouched_by
-          ? '<span class="status ok">confirmed by '+w.vouched_by+'</span>'
-          : '<span class="status">not yet checked</span>')+
+          ? '<span class="status ok">speaker: '+w.vouched_by+'</span>'
+          : '<span class="status">no speaker yet</span>')+
+        (w.checked==="confirmed"?'<span class="status src">in sources</span>':
+         w.checked==="variant"?'<span class="status src var" title="'+(w.check_note||"")+'">variant form</span>':
+         '<span class="status src none">not looked up</span>')+
         '<span class="act">'+
           '<a href="'+mail(w,"ok")+'">This is right</a>'+
           '<a href="'+mail(w,"bad")+'">This is wrong</a>'+
@@ -164,6 +171,7 @@ fetch("register.json",{cache:"no-store"})
     $("tWords").textContent=POOL.length;
     $("tLangs").textContent=new Set(POOL.map(w=>w.language)).size;
     $("tVouched").textContent=POOL.filter(w=>w.vouched_by).length;
+    $("tChecked").textContent=POOL.filter(w=>w.checked==="confirmed"||w.checked==="variant").length;
     render();
   })
   .catch(()=>{$("list").innerHTML='<p class="empty">Could not load the word pool.</p>'});

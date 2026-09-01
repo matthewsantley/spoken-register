@@ -1,6 +1,6 @@
 {
   "version": "0.2",
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "author": "Matthew John Santley",
   "contact": "mattsantley@hotmail.com",
   "licence": "MIT",
@@ -10,1375 +10,1634 @@
       "word": "Nyota",
       "language": "Swahili",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Irawo",
       "language": "Yoruba",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Bituin",
       "language": "Tagalog",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Quyllur",
       "language": "Quechua",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Seren",
       "language": "Welsh",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Whetu",
       "language": "Māori",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Tara",
       "language": "Hindi",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Hoshi",
       "language": "Japanese",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Byeol",
       "language": "Korean",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Tahti",
       "language": "Finnish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Yildiz",
       "language": "Turkish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Citlali",
       "language": "Nahuatl",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Ulloriaq",
       "language": "Inuktitut",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources attribute ulloriaq to Greenlandic (Kalaallisut); the pool records it as Inuktitut, which is closely related"
     },
     {
       "word": "Realta",
       "language": "Irish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Stjarna",
       "language": "Icelandic",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kokeb",
       "language": "Amharic",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Amharic script romanises variously; kokeb and kokebi both appear"
     },
     {
       "word": "Najm",
       "language": "Arabic",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "najm (m) and najma (f) both current in Arabic"
     },
     {
       "word": "Hoku",
       "language": "Hawaiian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kanyezi",
       "language": "Zulu",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "shortened from Zulu inkanyezi"
     },
     {
       "word": "Sao",
       "language": "Vietnamese",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Dao",
       "language": "Thai",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Bintang",
       "language": "Malay",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Nasti",
       "language": "Northern Sami",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Izar",
       "language": "Basque",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources give the definite form izarra; izar is the base form"
     },
     {
       "word": "Csillag",
       "language": "Hungarian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Noquisi",
       "language": "Cherokee",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Mbyja",
       "language": "Guarani",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Fetu",
       "language": "Samoan",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kalokalo",
       "language": "Fijian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Xiddig",
       "language": "Somali",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources give the definite xiddiga; xiddig is the base form"
     },
     {
       "word": "Setareh",
       "language": "Persian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Zvezda",
       "language": "Russian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Estrela",
       "language": "Portuguese",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kintana",
       "language": "Malagasy",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Nyenyezi",
       "language": "Chichewa",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Tauraro",
       "language": "Hausa",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Biddew",
       "language": "Wolof",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Gwiazda",
       "language": "Polish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Fetuu",
       "language": "Tongan",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Tsuki",
       "language": "Japanese",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Marama",
       "language": "Māori",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Killa",
       "language": "Quechua",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Mahina",
       "language": "Hawaiian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Qamar",
       "language": "Arabic",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Bulan",
       "language": "Malay",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Dal",
       "language": "Korean",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Gealach",
       "language": "Irish",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Anga",
       "language": "Swahili",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Langit",
       "language": "Tagalog",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Rangi",
       "language": "Māori",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Sora",
       "language": "Japanese",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Haneul",
       "language": "Korean",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Zeru",
       "language": "Basque",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources give the definite zerua; zeru is the base form"
     },
     {
       "word": "Awyr",
       "language": "Welsh",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Speir",
       "language": "Irish",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Taivas",
       "language": "Finnish",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Ilhuica",
       "language": "Nahuatl",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "shortened from Nahuatl ilhuicatl"
     },
     {
       "word": "Izulu",
       "language": "Zulu",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Tenger",
       "language": "Mongolian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Akash",
       "language": "Bengali",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Vaanam",
       "language": "Tamil",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Nebo",
       "language": "Russian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Himinn",
       "language": "Icelandic",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Sama",
       "language": "Arabic",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Nyanga",
       "language": "Zulu",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "shortened from Zulu inyanga"
     },
     {
       "word": "Kwenkwezi",
       "language": "Xhosa",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "shortened from Xhosa inkwenkwezi"
     },
     {
       "word": "Mwezi",
       "language": "Chichewa",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Wata",
       "language": "Hausa",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Weer",
       "language": "Wolof",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Dayax",
       "language": "Somali",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Chereka",
       "language": "Amharic",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Semay",
       "language": "Amharic",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Volana",
       "language": "Malagasy",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Lanitra",
       "language": "Malagasy",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Nyeredzi",
       "language": "Shona",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Mwedzi",
       "language": "Shona",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Njata",
       "language": "Kikuyu",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Munyenye",
       "language": "Luganda",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Naledi",
       "language": "Setswana",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kpakpando",
       "language": "Igbo",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Onwa",
       "language": "Igbo",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Igwe",
       "language": "Igbo",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Igbo igwe is sky or heaven; elu-igwe also given"
     },
     {
-      "word": "Nsoromma",
+      "word": "Nsoroma",
       "language": "Twi",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Osram",
       "language": "Twi",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Hoodere",
       "language": "Fula",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Lewru",
       "language": "Fula",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Dolo",
       "language": "Bambara",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kalo",
       "language": "Bambara",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Inyenyeri",
       "language": "Kinyarwanda",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Monzoto",
       "language": "Lingala",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Sanza",
       "language": "Lingala",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Kokob",
       "language": "Tigrinya",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Urjii",
       "language": "Oromo",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Itri",
       "language": "Tamazight",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Ayyur",
       "language": "Tamazight",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Ster",
       "language": "Afrikaans",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Maan",
       "language": "Afrikaans",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Osupa",
       "language": "Yoruba",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Warawara",
       "language": "Aymara",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Phaxsi",
       "language": "Aymara",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Jasy",
       "language": "Guarani",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Metztli",
       "language": "Nahuatl",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kaan",
       "language": "Yucatec Maya",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Galvladi",
       "language": "Cherokee",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Wicahpi",
       "language": "Lakota",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Hanwi",
       "language": "Lakota",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources give hanwi as Dakota; the pool records Lakota, a closely related variety"
     },
     {
       "word": "Mahpiya",
       "language": "Lakota",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Taqqiq",
       "language": "Inuktitut",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Qilak",
       "language": "Inuktitut",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Qaammat",
       "language": "Greenlandic",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Wangulen",
       "language": "Mapudungun",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Kuyen",
       "language": "Mapudungun",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Anang",
       "language": "Ojibwe",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Giizhig",
       "language": "Ojibwe",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Acahkos",
       "language": "Cree",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Zetwal",
       "language": "Haitian Creole",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Lalin",
       "language": "Haitian Creole",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Syel",
       "language": "Haitian Creole",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Lleuad",
       "language": "Welsh",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Reul",
       "language": "Scottish Gaelic",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Scottish Gaelic has both reul and rionnag"
     },
     {
       "word": "Rollage",
       "language": "Manx",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Steren",
       "language": "Cornish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Steredenn",
       "language": "Breton",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Loar",
       "language": "Breton",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Ilargi",
       "language": "Basque",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources give the definite ilargia; ilargi is the base form"
     },
     {
       "word": "Tungl",
       "language": "Icelandic",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Stjerne",
       "language": "Norwegian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Himmel",
       "language": "Norwegian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kuu",
       "language": "Finnish",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Taht",
       "language": "Estonian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Taevas",
       "language": "Estonian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Manu",
       "language": "Northern Sami",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Albmi",
       "language": "Northern Sami",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Hold",
       "language": "Hungarian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Zvaigzde",
       "language": "Lithuanian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Dangus",
       "language": "Lithuanian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Menulis",
       "language": "Lithuanian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Zvaigzne",
       "language": "Latvian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
-      "word": "Debess",
+      "word": "Debesis",
       "language": "Latvian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Meness",
       "language": "Latvian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Luna",
       "language": "Russian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Zorya",
       "language": "Ukrainian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Ukrainian has both zorya and zirka"
     },
     {
       "word": "Misyats",
       "language": "Ukrainian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Niebo",
       "language": "Polish",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Ksiezyc",
       "language": "Polish",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Hvezda",
       "language": "Czech",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Mesic",
       "language": "Czech",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Hviezda",
       "language": "Slovak",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Zvijezda",
       "language": "Croatian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Mjesec",
       "language": "Croatian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Stea",
       "language": "Romanian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Cer",
       "language": "Romanian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Asteri",
       "language": "Greek",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Ouranos",
       "language": "Greek",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Selini",
       "language": "Greek",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Greek selini is the formal or astronomical word; fengari is the everyday one"
     },
     {
       "word": "Yll",
       "language": "Albanian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Hena",
       "language": "Albanian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Qiell",
       "language": "Albanian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kewkba",
       "language": "Maltese",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Maltese has both kewkba and stilla"
     },
     {
       "word": "Estrella",
       "language": "Spanish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Cielo",
       "language": "Spanish",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Estel",
       "language": "Catalan",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Catalan has both estel and estrella"
     },
     {
       "word": "Stella",
       "language": "Italian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Etoile",
       "language": "French",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Ciel",
       "language": "French",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Lune",
       "language": "French",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Estela",
       "language": "Occitan",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Stern",
       "language": "German",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Mond",
       "language": "German",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Hemel",
       "language": "Dutch",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Dutch hemel is sky or heaven; lucht also given for sky"
     },
     {
       "word": "Shtern",
       "language": "Yiddish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Stjer",
       "language": "Frisian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Xingxing",
       "language": "Mandarin",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Mandarin xing alone also means star; xingxing is the everyday noun"
     },
     {
       "word": "Tian",
       "language": "Mandarin",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Mandarin tian is sky or heaven; tiankong is the fuller noun"
     },
     {
       "word": "Yueliang",
       "language": "Mandarin",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Troi",
       "language": "Vietnamese",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Trang",
       "language": "Vietnamese",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Chan",
       "language": "Thai",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Thai chan is the moon element of duang chan"
     },
     {
       "word": "Phkay",
       "language": "Khmer",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Khmer has native phkay and the borrowing tara"
     },
     {
       "word": "Khae",
       "language": "Khmer",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Khmer khae is moon or month; preah chan is the fuller form"
     },
     {
       "word": "Lintang",
       "language": "Javanese",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Rembulan",
       "language": "Javanese",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Bentang",
       "language": "Sundanese",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Buwan",
       "language": "Tagalog",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
-      "word": "Bitoon",
+      "word": "Bituon",
       "language": "Cebuano",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Chand",
       "language": "Hindi",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Hindi chand is the everyday word; chandrama the fuller form"
     },
     {
       "word": "Natchathiram",
       "language": "Tamil",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Nila",
       "language": "Tamil",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Chukka",
       "language": "Telugu",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Telugu has both chukka and nakshatram"
     },
     {
       "word": "Nakshatra",
       "language": "Kannada",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Ambaram",
       "language": "Malayalam",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Malayalam has both ambaram and aakaasham"
     },
     {
       "word": "Chandra",
       "language": "Marathi",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Sitara",
       "language": "Urdu",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Chann",
       "language": "Punjabi",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Jun",
       "language": "Nepali",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "Nepali jun is common alongside the Sanskritic chandrama"
     },
     {
       "word": "Taruwa",
       "language": "Sinhala",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources romanise the Sinhala as taruva"
     },
     {
       "word": "Handa",
       "language": "Sinhala",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Aseman",
       "language": "Persian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Mah",
       "language": "Persian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Storay",
       "language": "Pashto",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Spogmai",
       "language": "Pashto",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
-      "word": "Stere",
+      "word": "Sterk",
       "language": "Kurdish",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Hiv",
       "language": "Kurdish",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "variant",
+      "check_note": "sources give Kurmanji hev or heyv; spelling varies"
     },
     {
       "word": "Gokyuzu",
       "language": "Turkish",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Ulduz",
       "language": "Azerbaijani",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Zhuldyz",
       "language": "Kazakh",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Aspan",
       "language": "Kazakh",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Yulduz",
       "language": "Uzbek",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Osmon",
       "language": "Uzbek",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Sar",
       "language": "Mongolian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Karma",
       "language": "Tibetan",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Dawa",
       "language": "Tibetan",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Namkha",
       "language": "Tibetan",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Varskvlavi",
       "language": "Georgian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Mtvare",
       "language": "Georgian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Astgh",
       "language": "Armenian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Lusin",
       "language": "Armenian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Kochav",
       "language": "Hebrew",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Shamayim",
       "language": "Hebrew",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Yareach",
       "language": "Hebrew",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Lani",
       "language": "Hawaiian",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Lagi",
       "language": "Samoan",
       "meaning": "sky",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Masina",
       "language": "Samoan",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "confirmed"
     },
     {
       "word": "Vula",
       "language": "Fijian",
       "meaning": "moon",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Fetia",
       "language": "Tahitian",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Hetuu",
       "language": "Rapa Nui",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Iju",
       "language": "Marshallese",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Fitun",
       "language": "Tetum",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     },
     {
       "word": "Pution",
       "language": "Chamorro",
       "meaning": "star",
-      "vouched_by": null
+      "vouched_by": null,
+      "checked": "unchecked"
     }
   ],
   "register": [
@@ -1396,8 +1655,8 @@
     {
       "id": "Kepler-186 f",
       "stem": "Cyg",
-      "name": "Cyg Bitoon-u",
-      "core": "Bitoon",
+      "name": "Cyg Bituon-u",
+      "core": "Bituon",
       "language": "Cebuano",
       "meaning": "star",
       "suffix": "u",
@@ -3351,5 +3610,6 @@
       "class": "warm super-Earth",
       "existing_name": false
     }
-  ]
+  ],
+  "check_source": "indifferentlanguages.com word tables for star / sky / moon, cross-read against Wiktionary translation listings, Aug 2026"
 }
